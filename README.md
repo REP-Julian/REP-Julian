@@ -1,113 +1,58 @@
 <div align="center">
 
-<table width="100%">
-<tr>
-<td width="64%" valign="middle">
-<p><sub>RECRUITER SIGNAL BRIEF · rep-julian</sub></p>
-<h1>Dev-Julian</h1>
-<h2>Frontend or full-stack engineer</h2>
-<p>Starter at github</p>
-<p><strong>● Building and sharing work in public</strong></p>
-<p><sub>Building at Quezon City University</sub></p>
-<p><a href="https://github.com/rep-julian">GitHub</a></p>
-</td>
-<td width="36%" valign="middle" align="center">
-<img src="https://avatars.githubusercontent.com/u/221541911?u=bc5f51dc548c71f0cb9e1b0b3cdace0531263ae5&amp;v=4" width="180" alt="Dev-Julian GitHub avatar" />
-</td>
-</tr>
-</table>
+# Hi, I'm YOUR_NAME 👋
+
+### Full-Stack Developer & UI Designer
+
+<p align="center">
+  <a href="https://github.com/YOUR_USERNAME">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=435&lines=Building+modern+web+apps;Crafting+responsive+interfaces;Exploring+open+source" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/YOUR_USERNAME"><img src="https://img.shields.io/github/followers/YOUR_USERNAME?label=Followers&style=for-the-badge&color=161B22&logo=github" alt="GitHub followers" /></a>
+  <a href="mailto:your_email@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/YOUR_PROFILE"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+</p>
+
 </div>
 
-<h2>What teams can evaluate quickly</h2>
+---
 
-<table width="100%">
-<tr>
-<td width="33%" valign="top"><h3>Role fit</h3><p>Frontend or full-stack engineer · JavaScript · CSS · Java</p></td>
-<td width="33%" valign="top"><h3>Public proof</h3><p>18 repositories · 0 stars</p></td>
-<td width="33%" valign="top"><h3>Momentum</h3><p>276 contributions · 43 active days</p></td>
-</tr>
-</table>
-
-<p><sub>Starter at github</sub></p>
-
-<h2>Proof at a glance</h2>
-
-<table width="100%">
-<tr>
-<td width="25%" align="center"><strong>18</strong><br /><sub>Repositories</sub></td>
-<td width="25%" align="center"><strong>0</strong><br /><sub>Stars</sub></td>
-<td width="25%" align="center"><strong>276</strong><br /><sub>Contributions</sub></td>
-<td width="25%" align="center"><strong>25</strong><br /><sub>Followers</sub></td>
-</tr>
-</table>
+### Tech Stack
 
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-stats-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stats?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-stats-1&mode=dark" width="100%" alt="Dev-Julian GitHub proof metrics" />
-</picture>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,java,js,react,tailwind,html,css,php,mysql,git,vscode&theme=dark" alt="Skills" />
+  </a>
 </p>
 
-<h2>Selected work</h2>
+---
 
-<table width="100%">
-<tr>
-<td width="58%" valign="top">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&repos=rep-julian%2Fsololearn-ai-companion&v=recruiter-projects-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/projects?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&repos=rep-julian%2Fsololearn-ai-companion&v=recruiter-projects-1&mode=dark" width="100%" alt="Dev-Julian selected projects" />
-</picture>
-</td>
-<td width="42%" valign="top">
-<h3><a href="https://github.com/REP-Julian/sololearn-ai-companion">sololearn-ai-companion</a></h3>
-<p>An intelligent, high-precision Multi-Provider AI Study Companion &amp; Automation Solver for SoloLearn interactive courses, quizzes, code challenges, fill</p>
-<p><sub>JavaScript · ⭐ 0 · 🍴 0</sub></p>
-<p><a href="https://github.com/REP-Julian/sololearn-ai-companion">Read the repository →</a></p>
-</td>
-</tr>
-</table>
-
-<table width="100%">
-<tr>
-
-</tr>
-</table>
-
-<h2>Technical toolkit</h2>
+### GitHub Telemetry
 
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-stack-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stack?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-stack-1&mode=dark" width="100%" alt="Dev-Julian technology stack" />
-</picture>
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=C9D1D9&icon_color=00F0FF" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=C9D1D9" alt="Top Languages" width="48%" />
 </p>
-
-<table width="100%">
-<tr>
-<td width="20%" align="center"><strong>JavaScript</strong><br /><sub>58% of public code</sub></td>
-<td width="20%" align="center"><strong>CSS</strong><br /><sub>16% of public code</sub></td>
-<td width="20%" align="center"><strong>Java</strong><br /><sub>14% of public code</sub></td>
-<td width="20%" align="center"><strong>Python</strong><br /><sub>5% of public code</sub></td>
-<td width="20%" align="center"><strong>HTML</strong><br /><sub>4% of public code</sub></td>
-</tr>
-</table>
-
-<h2>Consistency signal</h2>
 
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-heatmap-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/heatmap?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=recruiter-heatmap-1&mode=dark" width="100%" alt="Dev-Julian contribution activity" />
-</picture>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&ring=00F0FF&fire=00F0FF&currStreakLabel=00F0FF" alt="Streak Stats" width="97%" />
 </p>
 
-<hr />
+---
 
-<table width="100%">
-<tr>
-<td width="62%" valign="middle"><h2>Let’s talk about the next build</h2><p>Open to thoughtful teams, ambitious products, and useful engineering work.</p></td>
-<td width="38%" valign="middle" align="right"><a href="https://github.com/rep-julian">GitHub</a></td>
-</tr>
-</table>
+### Featured Projects
 
-<p align="center"><sub>Dev-Julian · recruiter-ready profile generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
+| Project | Description | Stack | Link |
+| :--- | :--- | :--- | :--- |
+| Project One | Desktop application featuring custom interface and data handling. | Python, Tkinter | [View Repo](https://github.com/YOUR_USERNAME/project-one) |
+| Project Two | Full-stack platform for record management and workflows. | React, Tailwind, Appwrite | [View Repo](https://github.com/YOUR_USERNAME/project-two) |
+| Project Three | Automation scripts and terminal utilities for web tasks. | Python, Playwright | [View Repo](https://github.com/YOUR_USERNAME/project-three) |
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,20&height=100&section=footer" width="100%"/>
+</p>
