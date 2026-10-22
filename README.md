@@ -1,58 +1,108 @@
 <div align="center">
 
-# Hi, I'm YOUR_NAME 👋
+<p><code>rep-julian@github ~ $ neofetch --live</code></p>
 
-### Full-Stack Developer & UI Designer
+<table width="100%" style="display:table;width:100%;table-layout:fixed;">
+<tr>
+<td width="100%" style="width:100%;" valign="middle" align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/portrait?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&color=1&v=terminal-portrait-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/portrait?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&color=1&v=terminal-portrait-1&mode=dark" width="680" alt="Dev-Julian animated terminal portrait" />
+</picture>
+</td>
+</tr>
+</table>
 
-<p align="center">
-  <a href="https://github.com/YOUR_USERNAME">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=435&lines=Building+modern+web+apps;Crafting+responsive+interfaces;Exploring+open+source" alt="Typing SVG" />
-  </a>
-</p>
+<table width="100%" style="display:table;width:100%;table-layout:fixed;">
+<tr>
+<td width="100%" style="width:100%;" valign="middle" align="center">
+<pre><code>┌─[ IDENTITY ]──────────────────┐
+│ Dev-Julian                   │
+│ Frontend or full-stack engin │
+├─[ TELEMETRY ]─────────────────┤
+│ repos                 18 │
+│ stars                  0 │
+│ contributions        279 │
+│ followers             25 │
+│ location      the public int │
+└───────────────────────────────┘</code></pre>
+</td>
+</tr>
+</table>
 
-<p align="center">
-  <a href="https://github.com/YOUR_USERNAME"><img src="https://img.shields.io/github/followers/YOUR_USERNAME?label=Followers&style=for-the-badge&color=161B22&logo=github" alt="GitHub followers" /></a>
-  <a href="mailto:your_email@example.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://linkedin.com/in/YOUR_PROFILE"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
-
+<p><strong>● ONLINE</strong> · Starter at github</p>
 </div>
 
----
+<h2><code>$ tail -n 7 /var/log/build.log</code></h2>
 
-### Tech Stack
+<pre><code>[ok] identity loaded: Dev-Julian
+[ok] role detected: Frontend or full-stack engineer
+[ok] environment: GitHub public cloud
+[ok] workspace: Quezon City University
+[ok] coordinates: the public internet
+[ok] primary stack: JavaScript · CSS · Java · Python
+[run] Starter at github</code></pre>
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,java,js,react,tailwind,html,css,php,mysql,git,vscode&theme=dark" alt="Skills" />
-  </a>
-</p>
+<p>Building, learning, and shipping useful systems in public.</p>
 
----
-
-### GitHub Telemetry
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=C9D1D9&icon_color=00F0FF" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=C9D1D9" alt="Top Languages" width="48%" />
-</p>
+<h2><code>$ which --all toolchain</code></h2>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&ring=00F0FF&fire=00F0FF&currStreakLabel=00F0FF" alt="Streak Stats" width="97%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&v=terminal-stack-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stack?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&v=terminal-stack-1&mode=dark" width="100%" alt="Dev-Julian terminal toolchain" />
+</picture>
 </p>
 
----
+<table width="100%">
+<tr>
+<td width="17%" align="center"><strong>JavaScript</strong><br /><sub>58%</sub></td>
+<td width="17%" align="center"><strong>CSS</strong><br /><sub>16%</sub></td>
+<td width="17%" align="center"><strong>Java</strong><br /><sub>14%</sub></td>
+<td width="17%" align="center"><strong>Python</strong><br /><sub>5%</sub></td>
+<td width="17%" align="center"><strong>HTML</strong><br /><sub>4%</sub></td>
+<td width="17%" align="center"><strong>TypeScript</strong><br /><sub>2%</sub></td>
+</tr>
+</table>
 
-### Featured Projects
+<h2><code>$ git launchpad --all</code></h2>
 
-| Project | Description | Stack | Link |
-| :--- | :--- | :--- | :--- |
-| Project One | Desktop application featuring custom interface and data handling. | Python, Tkinter | [View Repo](https://github.com/YOUR_USERNAME/project-one) |
-| Project Two | Full-stack platform for record management and workflows. | React, Tailwind, Appwrite | [View Repo](https://github.com/YOUR_USERNAME/project-two) |
-| Project Three | Automation scripts and terminal utilities for web tasks. | Python, Playwright | [View Repo](https://github.com/YOUR_USERNAME/project-three) |
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&repos=rep-julian%2Fsololearn-ai-companion&v=terminal-projects-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/projects?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&repos=rep-julian%2Fsololearn-ai-companion&v=terminal-projects-1&mode=dark" width="860" alt="Dev-Julian terminal project launchpad" />
+</picture></p>
 
----
+<table width="100%">
+<tr>
+<td width="100%" valign="top"><p><code>sololearn-ai-companion</code></p><p>An intelligent, high-precision Multi-Provider AI Study Companion &amp; Automation Solver for SoloLearn interactive courses, quizzes, code challenges, fill</p><p><sub>JavaScript · ⭐ 0</sub></p><a href="https://github.com/REP-Julian/sololearn-ai-companion">open →</a></td>
+</tr>
+</table>
+
+<h2><code>$ git status --short</code></h2>
+
+<p align="center"><strong>working tree: clean · shipping consistently</strong></p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&v=terminal-stats-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stats?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&style=terminal&v=terminal-stats-1&mode=dark" width="100%" alt="Dev-Julian terminal contribution statistics" />
+</picture>
+</p>
+
+<h2><code>$ git log --graph --all</code></h2>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,20&height=100&section=footer" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=terminal-heatmap-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/heatmap?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=terminal-heatmap-1&mode=dark" width="100%" alt="Dev-Julian terminal contribution graph" />
+</picture>
 </p>
+
+<h2><code>$ ssh rep-julian@github</code></h2>
+
+<p>Ready to pair on a useful problem, review a systems decision, or ship the next small thing.</p>
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=terminal-social-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/social?username=rep-julian&theme=github-dark&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F221541911%3Fu%3Dbc5f51dc548c71f0cb9e1b0b3cdace0531263ae5%26v%3D4&v=terminal-social-1&mode=dark" width="100%" alt="Dev-Julian terminal contact links" />
+</picture></p>
+<p align="center"><a href="https://github.com/rep-julian">GitHub</a></p>
+<p align="center"><sub>Dev-Julian · terminal command center generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
