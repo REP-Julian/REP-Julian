@@ -183,12 +183,12 @@
     <img src="https://img.shields.io/badge/Email-2b2129?style=for-the-badge&logo=gmail&logoColor=ffb5a7&labelColor=2b2129" alt="Email" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-2b2129?style=for-the-badge&logo=linkedin&logoColor=ffb5a7&labelColor=2b2129" alt="LinkedIn" />
+  <a href="https://facebook.com">
+    <img src="https://img.shields.io/badge/Facebook-2b2129?style=for-the-badge&logo=facebook&logoColor=ffb5a7&labelColor=2b2129" alt="Facebook" />
   </a>
   &nbsp;
-  <a href="https://discord.com">
-    <img src="https://img.shields.io/badge/Discord-2b2129?style=for-the-badge&logo=discord&logoColor=ffb5a7&labelColor=2b2129" alt="Discord" />
+  <a href="https://instagram.com">
+    <img src="https://img.shields.io/badge/Instagram-2b2129?style=for-the-badge&logo=instagram&logoColor=ffb5a7&labelColor=2b2129" alt="Instagram" />
   </a>
 </p>
 
