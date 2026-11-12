@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">A cozy lo-fi coding desk</title>
+  <desc id="desc">A warm pastel pixel-inspired night scene with a glowing window, computer, plant, and cup of tea.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#382a36"/>
+      <stop offset="1" stop-color="#2b2129"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e4352"/>
+      <stop offset="1" stop-color="#3b2c3b"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#513b4c"/>
+      <stop offset="1" stop-color="#2b2129"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="420" rx="24" fill="url(#wall)"/>
+  <rect x="0" y="300" width="1000" height="120" fill="#241c24"/>
+  <rect x="68" y="42" width="260" height="204" rx="10" fill="#5e4352"/>
+  <rect x="80" y="54" width="236" height="180" rx="5" fill="url(#window)"/>
+  <path d="M80 190h236v44H80z" fill="#382a36"/>
+  <path d="M80 205h236v29H80z" fill="#2b2129"/>
+  <path d="M90 184h34v-40h26v40h26v-27h30v27h30v-50h28v50h46v-32h20v32h16v50H90z" fill="#2b2129"/>
+  <circle cx="253" cy="98" r="29" fill="#fcd5ce"/>
+  <circle cx="264" cy="88" r="25" fill="#5e4352"/>
+  <g fill="#f8edeb" opacity=".8">
+    <path d="M133 87h8v8h-8zM181 111h6v6h-6zM287 70h7v7h-7zM108 124h5v5h-5z"/>
+  </g>
+  <rect x="380" y="52" width="542" height="242" rx="16" fill="#5e4352"/>
+  <rect x="392" y="64" width="518" height="218" rx="10" fill="#30242f"/>
+  <rect x="410" y="82" width="482" height="182" rx="5" fill="url(#screen)"/>
+  <path d="M452 113h102M452 139h171M452 165h132M452 191h203M452 217h151" stroke="#fcd5ce" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <path d="M675 113h110M675 139h150M675 165h100M675 191h135" stroke="#ffb5a7" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+  <path d="M630 294h46l22 33H608z" fill="#5e4352"/>
+  <rect x="552" y="326" width="205" height="13" rx="7" fill="#fcd5ce"/>
+  <rect x="443" y="350" width="432" height="12" rx="6" fill="#5e4352"/>
+  <g fill="#fcd5ce" opacity=".85">
+    <rect x="465" y="348" width="19" height="5" rx="2"/><rect x="491" y="348" width="19" height="5" rx="2"/>
+    <rect x="517" y="348" width="19" height="5" rx="2"/><rect x="543" y="348" width="19" height="5" rx="2"/>
+    <rect x="569" y="348" width="19" height="5" rx="2"/><rect x="595" y="348" width="19" height="5" rx="2"/>
+    <rect x="621" y="348" width="19" height="5" rx="2"/><rect x="647" y="348" width="19" height="5" rx="2"/>
+    <rect x="673" y="348" width="19" height="5" rx="2"/><rect x="699" y="348" width="19" height="5" rx="2"/>
+    <rect x="725" y="348" width="19" height="5" rx="2"/><rect x="751" y="348" width="19" height="5" rx="2"/>
+    <rect x="777" y="348" width="19" height="5" rx="2"/><rect x="803" y="348" width="19" height="5" rx="2"/>
+  </g>
+  <rect x="820" y="287" width="68" height="50" rx="8" fill="#ffb5a7"/>
+  <path d="M888 298h14a13 13 0 0 1 0 27h-14" fill="none" stroke="#ffb5a7" stroke-width="8"/>
+  <path d="M841 274c-11-14 11-16 0-30M861 274c-11-14 11-16 0-30" fill="none" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <path d="M310 319c-8-35 7-57 25-76 2 23 20 29 17 51 17-10 21-25 20-43 25 24 31 45 19 68z" fill="#5e4352"/>
+  <path d="M338 319c-6-23 6-35 13-48 9 14 15 24 10 48z" fill="#ffb5a7"/>
+  <rect x="300" y="316" width="100" height="25" rx="7" fill="#5e4352"/>
+  <g fill="#ffb5a7">
+    <circle cx="113" cy="282" r="4"/><circle cx="150" cy="309" r="3"/><circle cx="243" cy="274" r="4"/>
+    <circle cx="945" cy="86" r="3"/><circle cx="954" cy="125" r="4"/>
+  </g>
+</svg>
