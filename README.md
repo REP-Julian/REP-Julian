@@ -1,33 +1,17 @@
-<!-- ============================================ -->
-<!-- REP-JULIAN | COZY LO-FI GITHUB PROFILE       -->
-<!-- Espresso #2b2129 · Plum #5e4352 · Peach #ffb5a7 -->
-<!-- Blush #fcd5ce · Cream #f8edeb                  -->
-<!-- ============================================ -->
+<!-- REP-JULIAN · COZY LO-FI PROFILE | #2b2129 #5e4352 #ffb5a7 #fcd5ce #f8edeb -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:2b2129,50:5e4352,100:ffb5a7&text=Hello,%20I'm%20Julian&fontColor=f8edeb&fontSize=42&fontAlignY=38&desc=Building%20little%20things%20with%20care&descAlignY=58&descSize=14&animation=fadeIn" width="100%" alt="Cozy lo-fi gradient header" />
+  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/profile-hero.svg" width="100%" alt="Illustrated lo-fi coding room with Julian, a moonlit window, computer, tea, and cat" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3500&pause=1000&color=FFB5A7&center=true&vCenter=true&width=620&lines=Building+useful+things+with+code;Learning+by+making;One+small+improvement+at+a+time;Fueled+by+curiosity+and+coffee" alt="Cozy coding messages typing in a loop" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3300&pause=900&color=FFB5A7&center=true&vCenter=true&width=620&lines=Building+useful+things+with+code;Learning+by+making;One+small+improvement+at+a+time;Fueled+by+curiosity+and+coffee" alt="Short lo-fi coding messages" />
 </p>
 
-<table align="center" border="0">
-  <tr>
-    <td width="34%" align="center" valign="middle">
-      <img src="https://github.com/REP-Julian.png" width="150" alt="REP-Julian GitHub avatar" />
-      <h2>REP-Julian</h2>
-      <p><strong>Developer · Student · Tech Enthusiast</strong></p>
-      <p>Curious about software, thoughtful interfaces, and tools that make everyday tasks easier.</p>
-      <a href="https://github.com/REP-Julian">GitHub profile ↗</a>
-    </td>
-    <td width="66%" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/cozy-coding-desk.svg" width="100%" alt="Original lo-fi night scene with a glowing window, coding desk, plant, and tea" />
-      <br />
-      <sub><em>“Slow progress is still progress. Keep creating.”</em></sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/REP-Julian"><img src="https://img.shields.io/badge/EXPLORE_MY_GITHUB-5e4352?style=for-the-badge&logo=github&logoColor=ffb5a7&labelColor=2b2129" alt="Explore my GitHub" /></a>
+  &nbsp; <sub>Developer · Student · Curious maker</sub>
+</p>
 
 ---
 
@@ -36,22 +20,14 @@
 <table align="center">
   <tr>
     <td width="50%" valign="top">
-
-- 👋 I'm Julian, a developer and student.
-- 💻 I like turning ideas into useful apps.
-- 🎨 I enjoy clean, welcoming interfaces.
-- 🌱 I learn best by building and iterating.
-- 🐾 Some of my projects explore pet care and adoption.
-- ☕ Usually coding with coffee and music nearby.
-
+      <h3>Things I enjoy</h3>
+      <p>Turning ideas into useful apps, making interfaces feel welcoming, and learning by building.</p>
+      <p>🐾 Some of my projects explore pet care and adoption.<br />🌱 Always learning, one small improvement at a time.</p>
     </td>
     <td width="50%" valign="top">
-
-<h3>What I'm exploring</h3>
-<p>Building practical web projects, improving the details that make them easier to use, and learning new tools along the way.</p>
-<h3>Current vibe</h3>
-<p><strong>Make it useful. Make it clear. Make it feel good to use.</strong></p>
-
+      <h3>My north star</h3>
+      <p><strong>Make it useful.<br />Make it clear.<br />Make it feel good to use.</strong></p>
+      <p>Usually building with coffee and music nearby. ☕</p>
     </td>
   </tr>
 </table>
@@ -66,39 +42,43 @@
 
 ---
 
-<h2 align="center">✨ Selected projects</h2>
-<p align="center">A few things I've been making and learning from.</p>
+<h2 align="center">✨ Things I've been making</h2>
+<p align="center"><sub>Small ideas, real projects, lots to learn.</sub></p>
 
 <table align="center">
   <tr>
     <td width="50%" valign="top">
       <h3>🐾 <a href="https://github.com/REP-Julian/PawTrackManagement">PawTrackManagement</a></h3>
-      <p>A mini-capstone project about pet care and helping animals find adoption and care.</p>
-      <sub>Pet care · Adoption · Mini-capstone</sub>
+      <p>A mini-capstone about caring for pets and helping animals find adoption.</p>
+      <p><img src="https://img.shields.io/badge/PET_CARE-5e4352?style=flat-square&labelColor=2b2129" alt="Pet care" /> <img src="https://img.shields.io/badge/ADOPTION-5e4352?style=flat-square&labelColor=2b2129" alt="Adoption" /></p>
+      <a href="https://github.com/REP-Julian/PawTrackManagement">Step inside ↗</a>
     </td>
     <td width="50%" valign="top">
       <h3>🔎 <a href="https://github.com/REP-Julian/Lost-and-Found">Lost-and-Found</a></h3>
       <p>An AI Studio app prototype exploring a lost-and-found experience.</p>
-      <sub>Web app · AI Studio</sub>
+      <p><img src="https://img.shields.io/badge/WEB_APP-5e4352?style=flat-square&labelColor=2b2129" alt="Web app" /> <img src="https://img.shields.io/badge/AI_STUDIO-5e4352?style=flat-square&labelColor=2b2129" alt="AI Studio" /></p>
+      <a href="https://github.com/REP-Julian/Lost-and-Found">Take a look ↗</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🤝 <a href="https://github.com/REP-Julian/Paw-Connect">Paw-Connect</a></h3>
       <p>An AI Studio app prototype and a place to keep exploring app ideas.</p>
-      <sub>Web app · AI Studio</sub>
+      <p><img src="https://img.shields.io/badge/WEB_APP-5e4352?style=flat-square&labelColor=2b2129" alt="Web app" /> <img src="https://img.shields.io/badge/EXPERIMENT-5e4352?style=flat-square&labelColor=2b2129" alt="Experiment" /></p>
+      <a href="https://github.com/REP-Julian/Paw-Connect">See the project ↗</a>
     </td>
     <td width="50%" valign="top">
       <h3>🧑‍💻 <a href="https://github.com/REP-Julian/Portfolio">Portfolio</a></h3>
       <p>My personal website project, built with HTML, CSS, and JavaScript.</p>
-      <sub>HTML · CSS · JavaScript</sub>
+      <p><img src="https://img.shields.io/badge/HTML-5e4352?style=flat-square&labelColor=2b2129" alt="HTML" /> <img src="https://img.shields.io/badge/CSS-5e4352?style=flat-square&labelColor=2b2129" alt="CSS" /> <img src="https://img.shields.io/badge/JAVASCRIPT-5e4352?style=flat-square&labelColor=2b2129" alt="JavaScript" /></p>
+      <a href="https://github.com/REP-Julian/Portfolio">Visit the site ↗</a>
     </td>
   </tr>
 </table>
 
 ---
 
-<h2 align="center">📈 GitHub activity</h2>
+<h2 align="center">🌱 A little progress, every day</h2>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=REP-Julian&theme=dark&hide_border=true&background=2b2129&ring=ffb5a7&fire=ffb5a7&currStreakLabel=fcd5ce&sideLabels=fcd5ce&currStreakNum=f8edeb&sideNums=f8edeb&dates=5e4352" width="80%" alt="GitHub contribution streak" />
@@ -116,16 +96,10 @@
 
 ---
 
-<h2 align="center">🌐 Say hello</h2>
+<h2 align="center">🌙 Thanks for stopping by</h2>
+
+<p align="center"><em>Take it one commit at a time. ☕</em></p>
 
 <p align="center">
-  <a href="https://github.com/REP-Julian">
-    <img src="https://img.shields.io/badge/Follow%20along-2b2129?style=for-the-badge&logo=github&logoColor=ffb5a7&labelColor=5e4352" alt="Visit REP-Julian on GitHub" />
-  </a>
-</p>
-
-<p align="center"><em>Thanks for stopping by. Hope your day has a little more warmth in it. ☕</em></p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffb5a7,50:5e4352,100:2b2129&height=120&section=footer" width="100%" alt="Cozy lo-fi gradient footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffb5a7,50:5e4352,100:2b2129&height=110&section=footer" width="100%" alt="Warm peach and plum wave footer" />
 </p>
