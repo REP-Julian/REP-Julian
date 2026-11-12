@@ -139,6 +139,57 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
+<!-- ═══════════════════ LIVE DISPATCH: RECENT REPOSITORIES ═══════════════════ -->
+<h2 align="center">⚡ Live Repository Dispatch</h2>
+<p align="center"><sub>Auto-updated every 6 hours and whenever new repositories or commits are pushed.</sub></p>
+
+<!-- AUTO_REPOS:START -->
+<table align="center" width="100%">
+  <thead>
+    <tr style="border-bottom: 2px solid #5e4352;">
+      <th align="left" style="color: #ffb5a7;">⚡ Repository</th>
+      <th align="left" style="color: #ffb5a7;">Overview</th>
+      <th align="center" style="color: #ffb5a7;">Stack</th>
+      <th align="center" style="color: #ffb5a7;">Pushed</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/StepUp-X-Google-Fit" style="color: #ffb5a7;">StepUp-X-Google-Fit</a></b></td>
+    <td style="color: #fcd5ce;">Cloud-based step synchronizer and walking cadence injector for Google Fit, Fitbit,...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-Kotlin-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-11-12</samp></td>
+  </tr>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/sql-cli" style="color: #ffb5a7;">sql-cli</a></b></td>
+    <td style="color: #fcd5ce;">“Beginner-friendly Python MySQL terminal for XAMPP with live schema autocomplete a...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-Python-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-11-09</samp></td>
+  </tr>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/Google-Forms-Universal-AI-Assistant" style="color: #ffb5a7;">Google-Forms-Universal-AI-Assistant</a></b></td>
+    <td style="color: #fcd5ce;">An AI-powered browser overlay and automation tool for Google Forms. It parses form...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-JavaScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-11-06</samp></td>
+  </tr>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/budget-tracker" style="color: #ffb5a7;">budget-tracker</a></b></td>
+    <td style="color: #fcd5ce;">Smart student budget tracker with offline-first logging, multi-wallet savings safe...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-TypeScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-10-27</samp></td>
+  </tr>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/DevJ" style="color: #ffb5a7;">DevJ</a></b></td>
+    <td style="color: #fcd5ce;">Personal developer portfolio showcasing full-stack web applications, UI engineerin...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-JavaScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-10-25</samp></td>
+  </tr>
+  </tbody>
+</table>
+<!-- AUTO_REPOS:END -->
+
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
+
 <!-- ═══════════════════ ACTIVITY GARDEN ═══════════════════ -->
 <h2 align="center">🌱 Contribution Garden</h2>
 
