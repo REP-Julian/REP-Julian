@@ -16,21 +16,14 @@
       <stop offset="100%" stop-color="#2b2129"/>
     </linearGradient>
     <style>
-      /* Pure Opacity Twinkle (Zero Transform Overrides) */
       @keyframes softTwinkleA { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.95; } }
       @keyframes softTwinkleB { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.25; } }
-      
-      /* Subtle Coffee Steam Rise */
       @keyframes steamRise {
         0% { transform: translateY(0); opacity: 0.65; }
         60% { opacity: 0.3; }
         100% { transform: translateY(-14px); opacity: 0; }
       }
-
-      /* Clean Cursor Step */
       @keyframes cursorStep { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-
-      /* Pulse Status Beacon */
       @keyframes statusPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
 
       .twinkle-a { animation: softTwinkleA 3.2s ease-in-out infinite; }
@@ -43,103 +36,117 @@
 
   <!-- Ambient Wall -->
   <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
-  <circle cx="1030" cy="36" r="220" fill="url(#glow)"/>
+  <circle cx="1060" cy="40" r="220" fill="url(#glow)"/>
   <path d="M36 32h1128v356H36z" fill="none" stroke="#5e4352" stroke-opacity=".65" stroke-width="2"/>
   <path d="M60 356h1080" stroke="#5e4352" stroke-width="2" opacity=".8"/>
 
   <!-- Twinkling Starfield -->
   <g fill="#fcd5ce">
-    <circle class="twinkle-a" cx="85" cy="78" r="2.5"/>
-    <circle class="twinkle-b" cx="542" cy="75" r="2.2"/>
-    <circle class="twinkle-a" cx="616" cy="118" r="2.5"/>
-    <circle class="twinkle-b" cx="1110" cy="104" r="2.5"/>
-    <circle class="twinkle-a" cx="676" cy="66" r="2.2"/>
-    <circle class="twinkle-b" cx="109" cy="302" r="2"/>
-    <circle class="twinkle-a" cx="470" cy="45" r="2.2"/>
-    <circle class="twinkle-b" cx="980" cy="62" r="2.5"/>
-    <path class="twinkle-a" d="M715 88h8v2h-8zM1052 166h8v2h-8zM627 305h8v2h-8z"/>
+    <circle class="twinkle-a" cx="75" cy="78" r="2.5"/>
+    <circle class="twinkle-b" cx="500" cy="75" r="2.2"/>
+    <circle class="twinkle-a" cx="580" cy="118" r="2.5"/>
+    <circle class="twinkle-b" cx="1110" cy="90" r="2.5"/>
+    <circle class="twinkle-a" cx="640" cy="50" r="2.2"/>
+    <circle class="twinkle-b" cx="80" cy="320" r="2"/>
+    <circle class="twinkle-a" cx="440" cy="45" r="2.2"/>
+    <circle class="twinkle-b" cx="960" cy="55" r="2.5"/>
+    <path class="twinkle-a" d="M1020 140h8v2h-8zM600 280h8v2h-8z"/>
   </g>
 
-  <!-- Left Window Illustration -->
-  <g transform="translate(82 92)">
-    <rect width="410" height="250" rx="12" fill="#2b2129" stroke="#5e4352" stroke-width="3"/>
-    <rect x="12" y="12" width="386" height="226" rx="6" fill="#382a36"/>
-    <path d="M12 174h386v64H12z" fill="#302430"/>
-    <path d="M12 201h386v37H12z" fill="#29202a"/>
-    <path d="M12 188h386v13H12z" fill="#5e4352" opacity=".55"/>
-    <!-- Moon -->
-    <circle cx="312" cy="68" r="32" fill="#fcd5ce"/>
-    <circle cx="327" cy="56" r="28" fill="#382a36"/>
-    <g fill="#f8edeb" opacity=".75">
-      <path class="twinkle-a" d="M82 48h5v5h-5z"/>
-      <path class="twinkle-b" d="M144 90h5v5h-5z"/>
-      <path class="twinkle-a" d="M248 116h6v6h-6z"/>
-      <path class="twinkle-b" d="M52 128h5v5h-5z"/>
-      <path class="twinkle-a" d="M367 83h5v5h-5z"/>
-    </g>
-    <!-- Distant Cityscape -->
-    <path d="M12 180h386v58H12z" fill="#2b2129"/>
-    <path d="M12 210h47v-28h18v28h36v-43h23v43h29v-24h21v24h35v-50h24v50h28v-29h18v29h75v28H12z" fill="#211a22"/>
-    <path d="M22 232h366" stroke="#5e4352" stroke-width="3"/>
-  </g>
-
+  <!-- ================= ZONE A: TYPOGRAPHY (Left: x=68 to x=560) ================= -->
   <!-- Top System Stamp -->
-  <text x="84" y="70" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', 'JetBrains Mono', monospace" font-size="13" font-weight="900" letter-spacing="4">REP-JULIAN  /  SYSTEM ACTIVE</text>
+  <text x="68" y="72" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', 'JetBrains Mono', monospace" font-size="12" font-weight="900" letter-spacing="3.5">REP-JULIAN  /  SYSTEM ACTIVE</text>
 
-  <!-- Center Typography -->
-  <text x="548" y="144" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="48" font-weight="900" letter-spacing="-0.5">Hello, I’m Julian</text>
-  <rect x="550" y="164" width="70" height="4" rx="2" fill="#ffb5a7"/>
-  <text x="548" y="207" fill="#fcd5ce" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="21" font-weight="900">Developer · Student · Curious Maker</text>
-  <text x="548" y="248" fill="#f8edeb" fill-opacity=".85" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="16" font-weight="900">I craft cozy digital experiences and intuitive web interfaces.</text>
+  <!-- Main Headline -->
+  <text x="68" y="146" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="52" font-weight="900" letter-spacing="-0.8">Hello, I’m Julian</text>
+  <rect x="70" y="168" width="76" height="4" rx="2" fill="#ffb5a7"/>
+
+  <!-- Subtitle -->
+  <text x="68" y="214" fill="#fcd5ce" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="20" font-weight="900">Developer · Student · Curious Maker</text>
+
+  <!-- Tagline -->
+  <text x="68" y="250" fill="#f8edeb" fill-opacity=".85" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="15" font-weight="900">Crafting cozy digital experiences &amp; intuitive web apps.</text>
 
   <!-- Status Pill -->
-  <g transform="translate(548 287)">
-    <rect width="190" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
-    <circle class="beacon-dot" cx="19" cy="18" r="5" fill="#ffb5a7"/>
-    <text x="34" y="23" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="12" font-weight="900" letter-spacing="1">SHIPPING AT NIGHT</text>
+  <g transform="translate(68 286)">
+    <rect width="186" height="34" rx="17" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
+    <circle class="beacon-dot" cx="18" cy="17" r="4.5" fill="#ffb5a7"/>
+    <text x="32" y="22" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="11.5" font-weight="900" letter-spacing="1">SHIPPING AT NIGHT</text>
   </g>
 
-  <!-- Desk & Computer Scene -->
-  <g transform="translate(770 176)">
-    <path d="M0 147h353v12H0z" fill="#5e4352"/>
+  <!-- Left Bottom Mantra -->
+  <text x="68" y="382" fill="#fcd5ce" fill-opacity=".8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="2">COFFEE  ·  CURIOSITY  ·  CODE</text>
+
+  <!-- ================= ZONE B: LO-FI ROOM SCENE (Right: x=620 to x=1140) ================= -->
+  <!-- Distant Window with Moon and Stars -->
+  <g transform="translate(620 60)">
+    <rect width="490" height="270" rx="14" fill="#2b2129" stroke="#5e4352" stroke-width="2.5"/>
+    <rect x="10" y="10" width="470" height="250" rx="8" fill="#382a36"/>
+    <path d="M10 180h470v80H10z" fill="#302430"/>
+    <path d="M10 210h470v50H10z" fill="#29202a"/>
+    <path d="M10 196h470v14H10z" fill="#5e4352" opacity=".55"/>
     
-    <!-- Monitor Back & Screen -->
-    <rect x="39" y="10" width="212" height="133" rx="10" fill="#5e4352"/>
-    <rect x="48" y="19" width="194" height="114" rx="5" fill="url(#screen)"/>
-
-    <!-- Code Lines on Monitor -->
-    <path d="M67 42h57M67 60h91M67 78h68M67 96h104" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
-    <path d="M173 42h43M173 60h52M173 78h39" stroke="#ffb5a7" stroke-width="5" stroke-linecap="round"/>
+    <!-- Moon -->
+    <circle cx="390" cy="65" r="32" fill="#fcd5ce"/>
+    <circle cx="404" cy="54" r="28" fill="#382a36"/>
     
-    <!-- Code Cursor on Screen -->
-    <rect class="code-cursor" x="175" y="93" width="7" height="6" rx="1" fill="#ffb5a7" />
+    <!-- Stars in window -->
+    <g fill="#f8edeb" opacity=".75">
+      <path class="twinkle-a" d="M60 45h5v5h-5z"/>
+      <path class="twinkle-b" d="M130 85h5v5h-5z"/>
+      <path class="twinkle-a" d="M210 50h5v5h-5z"/>
+      <path class="twinkle-b" d="M300 90h5v5h-5z"/>
+      <path class="twinkle-a" d="M440 120h5v5h-5z"/>
+    </g>
 
-    <!-- Monitor Stand -->
-    <path d="M122 143h48l16 19h-80z" fill="#806074"/>
-    <path d="M67 164h173" stroke="#fcd5ce" stroke-width="6" stroke-linecap="round" opacity=".8"/>
-    
-    <!-- Coffee Cup & Natural Steam -->
-    <rect x="265" y="119" width="53" height="37" rx="7" fill="#ffb5a7"/>
-    <path d="M318 127h10a11 11 0 0 1 0 22h-10" fill="none" stroke="#ffb5a7" stroke-width="6"/>
-    <!-- Steam -->
-    <path class="steam-float" d="M282 112 Q276 98 284 84" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" />
-    <path class="steam-float" d="M298 112 Q304 96 296 82" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" style="animation-delay: 1.5s;" />
+    <!-- Skyline -->
+    <path d="M10 200h470v60H10z" fill="#2b2129"/>
+    <path d="M10 220h45v-25h16v25h35v-40h22v40h28v-22h20v22h32v-45h22v45h26v-26h16v26h120v40H10z" fill="#211a22"/>
+    <path d="M20 248h450" stroke="#5e4352" stroke-width="2.5"/>
+  </g>
 
-    <!-- Potted Plant -->
-    <path d="M11 163c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
-    <path d="M31 163c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
-    <rect x="0" y="160" width="78" height="15" rx="5" fill="#5e4352"/>
+  <!-- Foreground Desk Setup with Computer, Mug, Plant, and Cat -->
+  <g transform="translate(690 180)">
+    <!-- Desk Surface -->
+    <path d="M0 146h430v14H0z" fill="#5e4352"/>
 
-    <!-- Resting Sleeping Cat (Stationed firmly on the desk - No CSS transform override!) -->
-    <g transform="translate(206 121)">
-      <path d="M0 18c2-17 13-27 27-28l11 12 11-12c16 2 27 12 29 28-8 16-20 23-39 23S8 34 0 18z" fill="#fcd5ce"/>
-      <path d="M5 9l2-25 21 15M60-1l21-15 2 25" fill="#ffb5a7"/>
-      <path d="M22 15h4M50 15h4M34 24l5 3 5-3" stroke="#2b2129" stroke-width="3" stroke-linecap="round"/>
-      <path d="M29 39v10M43 39v10" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round"/>
+    <!-- Potted Plant (Left desk) -->
+    <g transform="translate(15, 70)">
+      <path d="M15 80c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
+      <path d="M35 80c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
+      <rect x="5" y="76" width="60" height="14" rx="4" fill="#5e4352"/>
+    </g>
+
+    <!-- Monitor (Center desk) -->
+    <g transform="translate(100, 10)">
+      <rect width="200" height="126" rx="10" fill="#5e4352"/>
+      <rect x="8" y="8" width="184" height="110" rx="5" fill="url(#screen)"/>
+      <!-- Code lines -->
+      <path d="M24 30h52M24 46h84M24 62h62M24 78h96" stroke="#fcd5ce" stroke-width="4.5" stroke-linecap="round" opacity=".8"/>
+      <path d="M120 30h40M120 46h48M120 62h36" stroke="#ffb5a7" stroke-width="4.5" stroke-linecap="round"/>
+      <rect class="code-cursor" x="122" y="74" width="7" height="6" rx="1" fill="#ffb5a7"/>
+      <!-- Monitor Stand -->
+      <path d="M78 126h44l14 18h-72z" fill="#806074"/>
+      <path d="M28 144h144" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+    </g>
+
+    <!-- Warm Coffee Cup & Steam (Right desk) -->
+    <g transform="translate(320, 105)">
+      <rect width="48" height="35" rx="6" fill="#ffb5a7"/>
+      <path d="M48 112h8a9 9 0 0 1 0 18h-8" fill="none" stroke="#ffb5a7" stroke-width="5"/>
+      <path class="steam-float" d="M16 0 Q10 -12 18 -24" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" />
+      <path class="steam-float" d="M30 0 Q36 -14 28 -26" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" style="animation-delay: 1.5s;" />
+    </g>
+
+    <!-- Resting Sleeping Cat (Safely placed in its own clear zone on the desk) -->
+    <g transform="translate(245, 114)">
+      <path d="M0 16c2-15 11-24 24-25l10 11 10-11c14 2 24 11 26 25-7 14-18 20-35 20S7 30 0 16z" fill="#fcd5ce"/>
+      <path d="M4 8l2-22 19 13M54 0l19-13 2 22" fill="#ffb5a7"/>
+      <path d="M20 13h4M44 13h4M30 21l4 3 4-3" stroke="#2b2129" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M26 35v8M38 35v8" stroke="#fcd5ce" stroke-width="4" stroke-linecap="round"/>
     </g>
   </g>
 
-  <!-- Bottom Details -->
-  <text x="83" y="382" fill="#fcd5ce" fill-opacity=".8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="2">COFFEE  ·  CURIOSITY  ·  CODE</text>
-  <text x="1113" y="382" text-anchor="end" fill="#fcd5ce" fill-opacity=".8" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12">make it useful · make it clear_</text>
+  <!-- Right Bottom Footer -->
+  <text x="1110" y="382" text-anchor="end" fill="#fcd5ce" fill-opacity=".8" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12">make it useful · make it clear_</text>
 </svg>

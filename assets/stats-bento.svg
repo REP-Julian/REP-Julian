@@ -17,11 +17,10 @@
       <stop offset="100%" stop-color="#9a6e88" />
     </linearGradient>
     <style>
-      /* Precise Concentric Radar Ping */
       @keyframes radarPing {
-        0% { r: 5px; opacity: 1; }
-        70% { r: 16px; opacity: 0.2; }
-        100% { r: 20px; opacity: 0; }
+        0% { r: 4px; opacity: 1; }
+        70% { r: 14px; opacity: 0.2; }
+        100% { r: 18px; opacity: 0; }
       }
       .radar-wave-1 {
         transform-box: fill-box;
@@ -34,7 +33,6 @@
         animation: radarPing 2.5s cubic-bezier(0.16, 1, 0.3, 1) 1.25s infinite;
       }
 
-      /* Subtle breathing glow on active badge */
       @keyframes beaconBreathe {
         0%, 100% { opacity: 1; }
         50% { opacity: 0.6; }
@@ -52,16 +50,16 @@
 
   <!-- ================= TILE 1: CORE METRICS ================= -->
   <g transform="translate(18, 18)">
-    <rect width="280" height="120" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
-    <text x="18" y="28" class="bento-title">TELEMETRY // VOLUME</text>
-    <g transform="translate(18, 46)">
+    <rect width="280" height="122" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
+    <text x="18" y="26" class="bento-title">TELEMETRY // VOLUME</text>
+    <g transform="translate(18, 44)">
       <g>
         <text x="0" y="24" class="bento-num">10+</text>
-        <text x="0" y="42" class="bento-sub">Active Repositories</text>
+        <text x="0" y="46" class="bento-sub">Active Repositories</text>
       </g>
       <g transform="translate(140, 0)">
         <text x="0" y="24" class="bento-num">380+</text>
-        <text x="0" y="42" class="bento-sub">Contributions</text>
+        <text x="0" y="46" class="bento-sub">Contributions</text>
       </g>
     </g>
   </g>
@@ -69,15 +67,15 @@
   <!-- ================= TILE 2: CRAFT & HABITS ================= -->
   <g transform="translate(18, 150)">
     <rect width="280" height="122" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
-    <text x="18" y="28" class="bento-title">RHYTHM // HABITS</text>
-    <g transform="translate(18, 46)">
+    <text x="18" y="26" class="bento-title">RHYTHM // HABITS</text>
+    <g transform="translate(18, 44)">
       <g>
         <text x="0" y="24" class="bento-num">☕ 3.5</text>
-        <text x="0" y="42" class="bento-sub">Cups Espresso / Day</text>
+        <text x="0" y="46" class="bento-sub">Cups Espresso / Day</text>
       </g>
       <g transform="translate(140, 0)">
         <text x="0" y="24" class="bento-num">🌙 22-02</text>
-        <text x="0" y="42" class="bento-sub">Peak Code Velocity</text>
+        <text x="0" y="46" class="bento-sub">Peak Code Velocity</text>
       </g>
     </g>
   </g>
@@ -120,25 +118,25 @@
     </g>
   </g>
 
-  <!-- ================= TILE 4: FLAGSHIP SPRINT WITH CONCENTRIC RADAR ================= -->
+  <!-- ================= TILE 4: FLAGSHIP SPRINT ================= -->
   <g transform="translate(646, 18)">
     <rect width="236" height="254" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="18" y="28" class="bento-title">ACTIVE HORIZON</text>
 
-    <!-- Pulsing Radar with Dual Concentric Waves -->
+    <!-- Pulsing Radar with Safe Margins -->
     <g transform="translate(18, 50)">
-      <circle cx="10" cy="10" r="5" class="radar-wave-1" fill="none" stroke="#ffb5a7" stroke-width="1.5" />
-      <circle cx="10" cy="10" r="5" class="radar-wave-2" fill="none" stroke="#fcd5ce" stroke-width="1.2" />
-      <circle cx="10" cy="10" r="5" class="beacon-core" fill="#ffb5a7" />
-      <text x="30" y="14" fill="#ffb5a7" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">IN PRODUCTION</text>
+      <circle cx="12" cy="10" r="4" class="radar-wave-1" fill="none" stroke="#ffb5a7" stroke-width="1.5" />
+      <circle cx="12" cy="10" r="4" class="radar-wave-2" fill="none" stroke="#fcd5ce" stroke-width="1.2" />
+      <circle cx="12" cy="10" r="4" class="beacon-core" fill="#ffb5a7" />
+      <text x="36" y="14" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="11" font-weight="900" letter-spacing="0.5">IN PRODUCTION</text>
     </g>
 
     <!-- Project Identity Card -->
-    <g transform="translate(18, 88)">
-      <rect width="200" height="80" rx="8" fill="#342531" stroke="#5e4352" stroke-width="1" />
-      <text x="12" y="25" fill="#f8edeb" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="700">PawTrackManagement</text>
-      <text x="12" y="44" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">Pet care &amp; community</text>
-      <text x="12" y="60" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">adoption network 🐾</text>
+    <g transform="translate(18, 86)">
+      <rect width="200" height="82" rx="8" fill="#342531" stroke="#5e4352" stroke-width="1" />
+      <text x="12" y="25" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="13" font-weight="900">PawTrackManagement</text>
+      <text x="12" y="45" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">Pet care &amp; community</text>
+      <text x="12" y="61" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">adoption network 🐾</text>
     </g>
 
     <!-- Sprint Stats -->
