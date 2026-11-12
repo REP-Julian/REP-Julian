@@ -37,7 +37,20 @@
 <h2 align="center">🛠️ Tools in my toolbox</h2>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,python,git,github,vscode,figma&perline=6&theme=dark" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Python, Git, GitHub, VS Code, and Figma" />
+  <img src="https://img.shields.io/badge/-HTML-2b2129?style=flat-square&logo=html5&logoColor=ffb5a7" alt="HTML" />
+  <img src="https://img.shields.io/badge/-CSS-2b2129?style=flat-square&logo=css3&logoColor=ffb5a7" alt="CSS" />
+  <img src="https://img.shields.io/badge/-JavaScript-2b2129?style=flat-square&logo=javascript&logoColor=ffb5a7" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/-TypeScript-2b2129?style=flat-square&logo=typescript&logoColor=ffb5a7" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/-React-2b2129?style=flat-square&logo=react&logoColor=ffb5a7" alt="React" />
+  <img src="https://img.shields.io/badge/-Next%2Ejs-2b2129?style=flat-square&logo=nextdotjs&logoColor=ffb5a7" alt="Next.js" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/-Node%2Ejs-2b2129?style=flat-square&logo=nodedotjs&logoColor=ffb5a7" alt="Node.js" />
+  <img src="https://img.shields.io/badge/-Python-2b2129?style=flat-square&logo=python&logoColor=ffb5a7" alt="Python" />
+  <img src="https://img.shields.io/badge/-Git-2b2129?style=flat-square&logo=git&logoColor=ffb5a7" alt="Git" />
+  <img src="https://img.shields.io/badge/-GitHub-2b2129?style=flat-square&logo=github&logoColor=ffb5a7" alt="GitHub" />
+  <img src="https://img.shields.io/badge/-VS Code-2b2129?style=flat-square&logo=visualstudiocode&logoColor=ffb5a7" alt="VS Code" />
+  <img src="https://img.shields.io/badge/-Figma-2b2129?style=flat-square&logo=figma&logoColor=ffb5a7" alt="Figma" />
 </p>
 
 ---
