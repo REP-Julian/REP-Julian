@@ -281,76 +281,6 @@ def update_terminal_card(metrics: Dict[str, Any], file_path: str) -> bool:
     return False
 
 
-def update_readme(metrics: Dict[str, Any], readme_path: str) -> bool:
-    if not os.path.exists(readme_path):
-        return False
-
-    with open(readme_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    orig_content = content
-    recent = metrics.get("recent_repos", [])
-    if not recent:
-        return False
-
-    # Generate recent activity table
-    rows = []
-    for r in recent:
-        row = f"""  <tr>
-    <td><b><a href="{r['url']}" style="color: #ffb5a7;">{r['name']}</a></b></td>
-    <td style="color: #fcd5ce;">{r['desc']}</td>
-    <td align="center"><img src="https://img.shields.io/badge/-{r['lang']}-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">{r['updated']}</samp></td>
-  </tr>"""
-        rows.append(row)
-
-    table_body = "\n".join(rows)
-    new_section = f"""<!-- AUTO_REPOS:START -->
-<table align="center" width="100%">
-  <thead>
-    <tr style="border-bottom: 2px solid #5e4352;">
-      <th align="left" style="color: #ffb5a7;">⚡ Repository</th>
-      <th align="left" style="color: #ffb5a7;">Overview</th>
-      <th align="center" style="color: #ffb5a7;">Stack</th>
-      <th align="center" style="color: #ffb5a7;">Pushed</th>
-    </tr>
-  </thead>
-  <tbody>
-{table_body}
-  </tbody>
-</table>
-<!-- AUTO_REPOS:END -->"""
-
-    if "<!-- AUTO_REPOS:START -->" in content and "<!-- AUTO_REPOS:END -->" in content:
-        content = re.sub(
-            r'<!-- AUTO_REPOS:START -->.*?<!-- AUTO_REPOS:END -->',
-            new_section,
-            content,
-            flags=re.DOTALL,
-        )
-    else:
-        # Insert before the Activity Garden section
-        insert_marker = '<!-- ═══════════════════ ACTIVITY GARDEN ═══════════════════ -->'
-        if insert_marker in content:
-            dispatch_block = f"""<!-- ═══════════════════ LIVE DISPATCH: RECENT REPOSITORIES ═══════════════════ -->
-<h2 align="center">⚡ Live Repository Dispatch</h2>
-<p align="center"><sub>Auto-updated every 6 hours and whenever new repositories or commits are pushed.</sub></p>
-
-{new_section}
-
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
-
-"""
-            content = content.replace(insert_marker, dispatch_block + insert_marker)
-
-    if content != orig_content:
-        with open(readme_path, "w", encoding="utf-8") as f:
-            f.write(content)
-        print(f"Updated {readme_path}")
-        return True
-    return False
-
-
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] Syncing profile telemetry for @{GITHUB_USER}...")
     metrics = compute_metrics()
@@ -359,14 +289,12 @@ def main():
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     bento_path = os.path.join(base_dir, "assets", "stats-bento.svg")
     terminal_path = os.path.join(base_dir, "assets", "terminal-card.svg")
-    readme_path = os.path.join(base_dir, "README.md")
     
     c1 = update_stats_bento(metrics, bento_path)
     c2 = update_terminal_card(metrics, terminal_path)
-    c3 = update_readme(metrics, readme_path)
     
-    changed = c1 or c2 or c3
-    print(f"Sync complete. Files modified: {changed}")
+    changed = c1 or c2
+    print(f"Sync complete. Telemetry files modified: {changed}")
 
 
 if __name__ == "__main__":

@@ -139,57 +139,6 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ LIVE DISPATCH: RECENT REPOSITORIES ═══════════════════ -->
-<h2 align="center">⚡ Live Repository Dispatch</h2>
-<p align="center"><sub>Auto-updated every 6 hours and whenever new repositories or commits are pushed.</sub></p>
-
-<!-- AUTO_REPOS:START -->
-<table align="center" width="100%">
-  <thead>
-    <tr style="border-bottom: 2px solid #5e4352;">
-      <th align="left" style="color: #ffb5a7;">⚡ Repository</th>
-      <th align="left" style="color: #ffb5a7;">Overview</th>
-      <th align="center" style="color: #ffb5a7;">Stack</th>
-      <th align="center" style="color: #ffb5a7;">Pushed</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/QCU-WEEK-2-PROJECT" style="color: #ffb5a7;">QCU-WEEK-2-PROJECT</a></b></td>
-    <td style="color: #fcd5ce;">LESSON ON WEEK 2 PROJECT CC101</td>
-    <td align="center"><img src="https://img.shields.io/badge/-Java-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2025-09-06</samp></td>
-  </tr>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/PawTrackManagement" style="color: #ffb5a7;">PawTrackManagement</a></b></td>
-    <td style="color: #fcd5ce;">This empasize the how pet treatly and help also the people want to adopt a animal ...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-Java-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2025-11-27</samp></td>
-  </tr>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/Portfolio" style="color: #ffb5a7;">Portfolio</a></b></td>
-    <td style="color: #fcd5ce;">No description provided.</td>
-    <td align="center"><img src="https://img.shields.io/badge/-CSS-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-03-08</samp></td>
-  </tr>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/Calculator-project" style="color: #ffb5a7;">Calculator-project</a></b></td>
-    <td style="color: #fcd5ce;">Project Report since Grade 11 </td>
-    <td align="center"><img src="https://img.shields.io/badge/-CSS-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-03-08</samp></td>
-  </tr>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/Lost-and-Found" style="color: #ffb5a7;">Lost-and-Found</a></b></td>
-    <td style="color: #fcd5ce;">The QCU Lost and Found is a lightweight, browser-based prototype designed for Quez...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-TypeScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-04-26</samp></td>
-  </tr>
-  </tbody>
-</table>
-<!-- AUTO_REPOS:END -->
-
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
-
 <!-- ═══════════════════ ACTIVITY GARDEN ═══════════════════ -->
 <h2 align="center">🌱 Contribution Garden</h2>
 

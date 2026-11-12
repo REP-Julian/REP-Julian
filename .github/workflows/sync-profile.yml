@@ -39,9 +39,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-bento.svg assets/terminal-card.svg README.md
+          git add assets/stats-bento.svg assets/terminal-card.svg
           if ! git diff --staged --quiet; then
-            git commit -m "chore(telemetry): auto-update contributions & live dispatch [skip ci]"
+            git commit -m "chore(telemetry): auto-update contributions & repo telemetry [skip ci]"
             git push origin main
           else
             echo "No telemetry changes to commit."
