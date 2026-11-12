@@ -3,28 +3,48 @@
   <desc id="desc">An illustrated lo-fi coding room at night with warm peach light, a moonlit window, a sleeping cat, and a computer.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#342633"/>
-      <stop offset=".55" stop-color="#2b2129"/>
-      <stop offset="1" stop-color="#211a22"/>
+      <stop offset="0%" stop-color="#342633"/>
+      <stop offset="55%" stop-color="#2b2129"/>
+      <stop offset="100%" stop-color="#211a22"/>
     </linearGradient>
     <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffb5a7" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#5e4352" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#5e4352" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4e3949"/>
-      <stop offset="1" stop-color="#2b2129"/>
+      <stop offset="0%" stop-color="#4e3949"/>
+      <stop offset="100%" stop-color="#2b2129"/>
     </linearGradient>
+    <style>
+      @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
+      @keyframes steam { 0% { transform: translateY(0); opacity: 0.75; } 50% { transform: translateY(-7px); opacity: 0.35; } 100% { transform: translateY(-14px); opacity: 0; } }
+      @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.85); } }
+      
+      .star-1 { animation: twinkle 2.5s ease-in-out infinite; }
+      .star-2 { animation: twinkle 3.8s ease-in-out 1.2s infinite; }
+      .star-3 { animation: twinkle 3.1s ease-in-out 2.0s infinite; }
+      .steam-line { animation: steam 3s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .live-status { animation: pulse-dot 2.2s ease-in-out infinite; transform-origin: 567px 305px; }
+    </style>
   </defs>
+
   <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
   <circle cx="1030" cy="36" r="220" fill="url(#glow)"/>
   <path d="M36 32h1128v356H36z" fill="none" stroke="#5e4352" stroke-opacity=".65" stroke-width="2"/>
   <path d="M60 356h1080" stroke="#5e4352" stroke-width="2" opacity=".8"/>
-  <g fill="#fcd5ce" opacity=".6">
-    <circle cx="85" cy="78" r="2"/><circle cx="542" cy="75" r="2"/><circle cx="616" cy="118" r="2"/>
-    <circle cx="1110" cy="104" r="2"/><circle cx="676" cy="66" r="2"/><circle cx="109" cy="302" r="2"/>
-    <path d="M715 88h9v2h-9zM1052 166h9v2h-9zM627 305h9v2h-9z"/>
+
+  <!-- Stars -->
+  <g fill="#fcd5ce">
+    <circle class="star-1" cx="85" cy="78" r="2.5"/>
+    <circle class="star-2" cx="542" cy="75" r="2.5"/>
+    <circle class="star-3" cx="616" cy="118" r="2.5"/>
+    <circle class="star-1" cx="1110" cy="104" r="2.5"/>
+    <circle class="star-2" cx="676" cy="66" r="2.5"/>
+    <circle class="star-3" cx="109" cy="302" r="2.5"/>
+    <path class="star-1" d="M715 88h9v2h-9zM1052 166h9v2h-9zM627 305h9v2h-9z"/>
   </g>
+
+  <!-- Left Window Illustration -->
   <g transform="translate(82 92)">
     <rect width="410" height="250" rx="12" fill="#2b2129" stroke="#5e4352" stroke-width="3"/>
     <rect x="12" y="12" width="386" height="226" rx="6" fill="#382a36"/>
@@ -40,19 +60,24 @@
     <path d="M12 210h47v-28h18v28h36v-43h23v43h29v-24h21v24h35v-50h24v50h28v-29h18v29h75v28H12z" fill="#211a22"/>
     <path d="M22 232h366" stroke="#5e4352" stroke-width="3"/>
   </g>
-  <text x="84" y="70" fill="#ffb5a7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="4">REP-JULIAN  /  BUILD LOG</text>
 
-  <text x="548" y="144" fill="#f8edeb" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="700">Hello, I’m Julian</text>
+  <!-- Top Code Stamp -->
+  <text x="84" y="70" fill="#ffb5a7" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="4">REP-JULIAN  /  SYSTEM ACTIVE</text>
+
+  <!-- Center Typography -->
+  <text x="548" y="144" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.5">Hello, I’m Julian</text>
   <rect x="550" y="164" width="70" height="4" rx="2" fill="#ffb5a7"/>
-  <text x="548" y="207" fill="#fcd5ce" font-family="Segoe UI, Arial, sans-serif" font-size="21">Developer · Student · Curious maker</text>
-  <text x="548" y="248" fill="#f8edeb" fill-opacity=".78" font-family="Segoe UI, Arial, sans-serif" font-size="17">I turn ideas into useful apps, one thoughtful detail at a time.</text>
+  <text x="548" y="207" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="500">Developer · Student · Curious Maker</text>
+  <text x="548" y="248" fill="#f8edeb" fill-opacity=".85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">I craft cozy digital experiences and intuitive web interfaces.</text>
 
+  <!-- Interactive Status Pill -->
   <g transform="translate(548 287)">
-    <rect width="150" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#806074"/>
-    <circle cx="19" cy="18" r="5" fill="#ffb5a7"/>
-    <text x="34" y="23" fill="#f8edeb" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1">MAKING THINGS</text>
+    <rect width="180" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
+    <circle class="live-status" cx="19" cy="18" r="5" fill="#ffb5a7"/>
+    <text x="34" y="23" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1">SHIPPING AT NIGHT</text>
   </g>
 
+  <!-- Desk & Computer Scene -->
   <g transform="translate(770 176)">
     <path d="M0 147h353v12H0z" fill="#5e4352"/>
     <rect x="39" y="10" width="212" height="133" rx="10" fill="#5e4352"/>
@@ -61,12 +86,20 @@
     <path d="M173 42h43M173 60h52M173 78h39M173 96h47" stroke="#ffb5a7" stroke-width="5" stroke-linecap="round"/>
     <path d="M122 143h48l16 19h-80z" fill="#806074"/>
     <path d="M67 164h173" stroke="#fcd5ce" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+    
+    <!-- Warm Coffee Cup & Steam -->
     <rect x="265" y="119" width="53" height="37" rx="7" fill="#ffb5a7"/>
     <path d="M318 127h10a11 11 0 0 1 0 22h-10" fill="none" stroke="#ffb5a7" stroke-width="6"/>
-    <path d="M279 111c-8-11 8-13 0-23M297 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <!-- Steam Lines Animated -->
+    <path class="steam-line" d="M279 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round"/>
+    <path class="steam-line" d="M297 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Potted Plant -->
     <path d="M11 163c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
     <path d="M31 163c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
     <rect x="0" y="160" width="78" height="15" rx="5" fill="#5e4352"/>
+
+    <!-- Cozy Sleeping Cat -->
     <g transform="translate(206 121)">
       <path d="M0 18c2-17 13-27 27-28l11 12 11-12c16 2 27 12 29 28-8 16-20 23-39 23S8 34 0 18z" fill="#fcd5ce"/>
       <path d="M5 9l2-25 21 15M60-1l21-15 2 25" fill="#ffb5a7"/>
@@ -75,6 +108,7 @@
     </g>
   </g>
 
-  <text x="83" y="382" fill="#fcd5ce" fill-opacity=".72" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="2">COFFEE  ·  CURIOSITY  ·  CODE</text>
-  <text x="1113" y="382" text-anchor="end" fill="#fcd5ce" fill-opacity=".72" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">take it one commit at a time_</text>
+  <!-- Bottom Details -->
+  <text x="83" y="382" fill="#fcd5ce" fill-opacity=".8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="2">COFFEE  ·  CURIOSITY  ·  CODE</text>
+  <text x="1113" y="382" text-anchor="end" fill="#fcd5ce" fill-opacity=".8" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12">make it useful · make it clear_</text>
 </svg>

@@ -1,69 +1,69 @@
-<!-- REP-JULIAN · COZY LO-FI PROFILE v3.0 | #2b2129 #5e4352 #ffb5a7 #fcd5ce #f8edeb -->
+<!-- REP-JULIAN · COZY LO-FI PROFILE v4.0 (SOVEREIGN EDITION) | #2b2129 #5e4352 #ffb5a7 #fcd5ce #f8edeb -->
 
-<!-- ═══════════════════ HERO BANNER ═══════════════════ -->
+<!-- ═══════════════════ HERO BANNER (ANIMATED SVG) ═══════════════════ -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/profile-hero.svg" width="100%" alt="Julian's cozy coding corner — a lo-fi night scene with moonlit window, sleeping cat, monitor, and coffee" />
 </p>
 
+<!-- Typing Subtitle -->
 <p align="center">
   <a href="https://github.com/REP-Julian">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=1100&color=FFB5A7&center=true&vCenter=true&repeat=true&width=580&height=45&lines=%E2%9C%A7+frontend+developer+%C2%B7+design+enthusiast+%C2%B7+cat+person+%E2%9C%A7;%E2%9C%A7+coffee+%C2%B7+curiosity+%C2%B7+clean+code+%E2%9C%A7;%E2%9C%A7+building+warm+interfaces+one+commit+at+a+time+%E2%9C%A7" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1000&color=FFB5A7&center=true&vCenter=true&repeat=true&width=600&height=40&lines=%E2%9C%A7+frontend+developer+%C2%B7+ui%2Fux+craftsman+%C2%B7+pet+tech+builder+%E2%9C%A7;%E2%9C%A7+turning+caffeine+and+lo-fi+beats+into+responsive+apps+%E2%9C%A7;%E2%9C%A7+make+it+useful+%C2%B7+make+it+clear+%C2%B7+make+it+feel+good+%E2%9C%A7" alt="Typing Subtitle" />
   </a>
 </p>
 
+<!-- Quick Stats Badges -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=REP-Julian&style=for-the-badge&color=5e4352&label=PROFILE+VIEWS" alt="Profile Views" />
   &nbsp;
   <img src="https://img.shields.io/github/followers/REP-Julian?style=for-the-badge&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7&label=Followers" alt="Followers" />
   &nbsp;
-  <img src="https://img.shields.io/badge/OPEN_TO_COLLABORATE-ffb5a7?style=for-the-badge&labelColor=2b2129&logo=handshake&logoColor=ffb5a7" alt="Open to Collaborate" />
+  <img src="https://img.shields.io/badge/STATUS-SHIPPING%20AT%20NIGHT-ffb5a7?style=for-the-badge&labelColor=2b2129" alt="Status" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ ABOUT ME ═══════════════════ -->
-<h2 align="center">☕ About Me</h2>
-
+<!-- ═══════════════════ SPLIT INTRO: BIO & TERMINAL ═══════════════════ -->
 <table align="center" width="100%">
   <tr>
-    <td width="28%" align="center" valign="top">
+    <td width="35%" align="center" valign="middle">
+      <br />
       <a href="https://github.com/REP-Julian">
-        <img src="https://images.weserv.nl/?url=github.com/REP-Julian.png&w=170&h=170&fit=cover&mask=circle&maxage=7d" width="170" height="170" alt="Julian" />
+        <img src="https://images.weserv.nl/?url=github.com/REP-Julian.png&w=160&h=160&fit=cover&mask=circle&maxage=7d" width="160" height="160" alt="Julian Avatar" />
       </a>
       <br /><br />
-      <samp><b>@REP-Julian</b></samp><br />
-      <sub>Developer · Student · Curious Maker</sub>
+      <b style="color: #ffb5a7; font-size: 1.25rem;">Julian Agustino</b><br />
+      <samp style="color: #fcd5ce;">@REP-Julian</samp><br />
+      <sub>Developer · Student · UI Craftsman</sub>
+      <br /><br />
+      <p style="color: #f8edeb; font-size: 0.9rem;">
+        Building delightful digital spaces with clean code and warm aesthetics.
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/☕_Fuel-Dark_Roast-ffb5a7?style=flat-square&labelColor=2b2129" />
+        <img src="https://img.shields.io/badge/🎧_Audio-Lo--Fi-ffb5a7?style=flat-square&labelColor=2b2129" />
+      </p>
     </td>
-    <td width="72%" valign="top">
-      <p>I build things for the web with a focus on making interfaces that feel <b>warm, clear, and intuitive</b>. Currently exploring pet care platforms, learning TypeScript, and always tinkering with new ideas — one thoughtful detail at a time.</p>
-      <ul>
-        <li>🔭 Building <a href="https://github.com/REP-Julian/PawTrackManagement"><b>PawTrackManagement</b></a> — a pet care & adoption platform.</li>
-        <li>🌱 Deepening my skills in <b>TypeScript</b>, <b>React</b>, and <b>Next.js</b>.</li>
-        <li>🐾 Passionate about animals, community tools, and accessible design.</li>
-        <li>🎧 Powered by lo-fi beats, dark roast coffee, and midnight code sessions.</li>
-        <li>🎨 Obsessed with design systems, micro-interactions, and subtle animations.</li>
-        <li>📫 Reach me at <a href="mailto:agustino.2006.julian@gmail.com">agustino.2006.julian@gmail.com</a></li>
-      </ul>
+    <td width="65%" align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/terminal-card.svg" width="100%" alt="Julian Config Terminal" />
     </td>
   </tr>
 </table>
 
+<!-- Live Lo-Fi Audio Card -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🔨_Building-PawTrack_Management-ffb5a7?style=flat-square&labelColor=2b2129" alt="Building" />
-  <img src="https://img.shields.io/badge/🌱_Learning-TypeScript_%26_React-ffb5a7?style=flat-square&labelColor=2b2129" alt="Learning" />
-  <img src="https://img.shields.io/badge/🎧_Vibing-Lo--fi_Hip_Hop-ffb5a7?style=flat-square&labelColor=2b2129" alt="Vibing" />
-  <img src="https://img.shields.io/badge/☕_Fuel-Dark_Roast-ffb5a7?style=flat-square&labelColor=2b2129" alt="Coffee" />
+  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/lofi-player.svg" width="100%" alt="Lo-Fi Player" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ TECH STACK ═══════════════════ -->
-<h2 align="center">🛠️ Tech Stack</h2>
+<!-- ═══════════════════ TECH STACK MATRIX ═══════════════════ -->
+<h2 align="center">🛠️ Technical Arsenal</h2>
 
 <table align="center">
   <tr>
     <td align="center" valign="middle">
-      <sub><b>Frontend</b></sub><br /><br />
+      <sub><b>Frontend Ecosystem</b></sub><br /><br />
       <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs&theme=dark" alt="Frontend" />
       </a>
@@ -71,7 +71,7 @@
   </tr>
   <tr>
     <td align="center" valign="middle">
-      <sub><b>Backend & Dev Tools</b></sub><br /><br />
+      <sub><b>Backend, Design &amp; DevOps Tooling</b></sub><br /><br />
       <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=nodejs,py,git,github,vscode,figma&theme=dark" alt="Backend & Tools" />
       </a>
@@ -79,138 +79,100 @@
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ FEATURED PROJECTS ═══════════════════ -->
-<h2 align="center">✨ Featured Projects</h2>
-<p align="center"><sub>Small ideas, real projects, lots to learn.</sub></p>
+<!-- ═══════════════════ FEATURED PROJECTS (BESPOKE SVG BENTO) ═══════════════════ -->
+<h2 align="center">✨ Handcrafted Projects</h2>
+<p align="center"><sub>Real code, live repositories, and continuous exploration.</sub></p>
 
 <table align="center" width="100%">
   <tr>
-    <td width="50%" valign="top">
-      <h3>🐾 <a href="https://github.com/REP-Julian/PawTrackManagement">PawTrackManagement</a></h3>
-      <p>A mini-capstone about caring for pets and helping animals find loving homes through adoption tracking.</p>
-      <p>
-        <img src="https://img.shields.io/badge/PET_CARE-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/ADOPTION-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/CAPSTONE-5e4352?style=flat-square&labelColor=2b2129" />
-      </p>
+    <td width="50%" align="center">
       <a href="https://github.com/REP-Julian/PawTrackManagement">
-        <img src="https://img.shields.io/github/stars/REP-Julian/PawTrackManagement?style=flat-square&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7" />
-        <img src="https://img.shields.io/github/last-commit/REP-Julian/PawTrackManagement?style=flat-square&color=5e4352&labelColor=2b2129&logo=git&logoColor=ffb5a7" />
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-pawtrack.svg" width="100%" alt="PawTrackManagement" />
       </a>
     </td>
-    <td width="50%" valign="top">
-      <h3>🔎 <a href="https://github.com/REP-Julian/Lost-and-Found">Lost-and-Found</a></h3>
-      <p>An AI Studio app prototype that explores how technology can reunite people with lost belongings.</p>
-      <p>
-        <img src="https://img.shields.io/badge/WEB_APP-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/AI_STUDIO-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/PROTOTYPE-5e4352?style=flat-square&labelColor=2b2129" />
-      </p>
+    <td width="50%" align="center">
       <a href="https://github.com/REP-Julian/Lost-and-Found">
-        <img src="https://img.shields.io/github/stars/REP-Julian/Lost-and-Found?style=flat-square&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7" />
-        <img src="https://img.shields.io/github/last-commit/REP-Julian/Lost-and-Found?style=flat-square&color=5e4352&labelColor=2b2129&logo=git&logoColor=ffb5a7" />
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-lostfound.svg" width="100%" alt="Lost-and-Found" />
       </a>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🤝 <a href="https://github.com/REP-Julian/Paw-Connect">Paw-Connect</a></h3>
-      <p>An AI Studio prototype connecting pet communities — a playground for exploring new app ideas.</p>
-      <p>
-        <img src="https://img.shields.io/badge/WEB_APP-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/AI_STUDIO-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/EXPERIMENT-5e4352?style=flat-square&labelColor=2b2129" />
-      </p>
+    <td width="50%" align="center">
       <a href="https://github.com/REP-Julian/Paw-Connect">
-        <img src="https://img.shields.io/github/stars/REP-Julian/Paw-Connect?style=flat-square&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7" />
-        <img src="https://img.shields.io/github/last-commit/REP-Julian/Paw-Connect?style=flat-square&color=5e4352&labelColor=2b2129&logo=git&logoColor=ffb5a7" />
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-pawconnect.svg" width="100%" alt="Paw-Connect" />
       </a>
     </td>
-    <td width="50%" valign="top">
-      <h3>🧑‍💻 <a href="https://github.com/REP-Julian/Portfolio">Portfolio</a></h3>
-      <p>My personal website — hand-crafted with vanilla HTML, CSS, and JavaScript. A digital home base.</p>
-      <p>
-        <img src="https://img.shields.io/badge/HTML-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/CSS-5e4352?style=flat-square&labelColor=2b2129" />
-        <img src="https://img.shields.io/badge/JAVASCRIPT-5e4352?style=flat-square&labelColor=2b2129" />
-      </p>
+    <td width="50%" align="center">
       <a href="https://github.com/REP-Julian/Portfolio">
-        <img src="https://img.shields.io/github/stars/REP-Julian/Portfolio?style=flat-square&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7" />
-        <img src="https://img.shields.io/github/last-commit/REP-Julian/Portfolio?style=flat-square&color=5e4352&labelColor=2b2129&logo=git&logoColor=ffb5a7" />
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-portfolio.svg" width="100%" alt="Portfolio" />
       </a>
     </td>
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ STATS ═══════════════════ -->
-<h2 align="center">📊 Stats & Streak</h2>
+<!-- ═══════════════════ TELEMETRY BENTO GRID ═══════════════════ -->
+<h2 align="center">📊 System Telemetry &amp; Focus</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FREP-Julian&query=%24.public_repos&style=for-the-badge&logo=github&logoColor=ffb5a7&label=Public%20Repos&color=5e4352&labelColor=2b2129" alt="Public Repos" />
-  &nbsp;
-  <img src="https://img.shields.io/github/followers/REP-Julian?style=for-the-badge&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7&label=Followers" alt="Followers" />
-  &nbsp;
-  <img src="https://img.shields.io/github/stars/REP-Julian?affiliations=OWNER&style=for-the-badge&color=5e4352&labelColor=2b2129&logo=github&logoColor=ffb5a7&label=Total+Stars" alt="Total Stars" />
+  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/stats-bento.svg" width="100%" alt="Telemetry Bento Grid" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=REP-Julian&background=2b2129&border=5e4352&stroke=5e4352&ring=ffb5a7&fire=ffb5a7&currStreakNum=ffb5a7&sideNums=f8edeb&currStreakLabel=fcd5ce&sideLabels=fcd5ce&dates=5e4352" width="70%" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=REP-Julian&background=2b2129&border=5e4352&stroke=5e4352&ring=ffb5a7&fire=ffb5a7&currStreakNum=ffb5a7&sideNums=f8edeb&currStreakLabel=fcd5ce&sideLabels=fcd5ce&dates=5e4352" width="75%" alt="GitHub Streak" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ CODING SCENE + SNAKE ═══════════════════ -->
-<h2 align="center">🌱 Activity</h2>
+<!-- ═══════════════════ ACTIVITY GARDEN ═══════════════════ -->
+<h2 align="center">🌱 Contribution Garden</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/cozy-coding-desk.svg" width="90%" alt="Cozy coding desk — a warm night scene with glowing monitor, coffee, plant, and moonlit window" />
+  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/cozy-coding-desk.svg" width="95%" alt="Cozy coding desk scene" />
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" width="90%" alt="Contribution Snake" />
+    <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" width="95%" alt="Contribution Snake" />
   </picture>
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ MY APPROACH ═══════════════════ -->
-<h2 align="center">🎯 My Approach</h2>
+<!-- ═══════════════════ ENGINEERING PRINCIPLES ═══════════════════ -->
+<h2 align="center">🎯 Engineering Mindset</h2>
 
 <table align="center" width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>How I Build</h3>
+      <h3 style="color: #ffb5a7;">📐 Architecture &amp; Craft</h3>
       <ul>
-        <li>🧹 <b>Clean code</b> over clever code — readability wins.</li>
-        <li>🎯 <b>Make it useful first</b>, beautiful second.</li>
-        <li>🐛 <b>Debug with curiosity</b>, not frustration.</li>
-        <li>📐 Success = shipped features, not lines of code.</li>
+        <li>🧹 <b>Clean &amp; Intentional:</b> No dead code, no premature abstraction.</li>
+        <li>🎨 <b>Aesthetic Ergonomics:</b> Accessible contrast, deliberate typography, smooth physics.</li>
+        <li>⚡ <b>Reliable Deployments:</b> Self-contained assets that never break.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h3>What Drives Me</h3>
+      <h3 style="color: #ffb5a7;">🐾 Motivation &amp; Routine</h3>
       <ul>
-        <li>🌱 Every day is a chance to learn something new.</li>
-        <li>🐱 My cat reviews all my code (very critical reviewer).</li>
-        <li>🌙 Peak productivity: 10pm → 2am.</li>
-        <li>☕ Everything improves after the second coffee.</li>
+        <li>🌙 <b>Midnight Flow:</b> Highest focus unlocked between 22:00 and 02:00.</li>
+        <li>☕ <b>Ritual:</b> Dark roast coffee + non-stop chill lo-fi radio.</li>
+        <li>🌱 <b>Growth:</b> Compounding 1% improvements on every commit.</li>
       </ul>
     </td>
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider.svg" width="650" /></p>
 
-<!-- ═══════════════════ CONNECT ═══════════════════ -->
+<!-- ═══════════════════ CONNECT & FOOTER ═══════════════════ -->
 <h2 align="center">🤝 Let's Connect</h2>
-<p align="center"><sub>Always happy to talk code, design, or cat photos.</sub></p>
+<p align="center"><sub>Open for collaborations, UI discussions, and creative builds.</sub></p>
 
 <p align="center">
   <a href="https://github.com/REP-Julian">
