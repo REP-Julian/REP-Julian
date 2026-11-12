@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Julian's cozy coding corner</title>
+  <desc id="desc">An illustrated lo-fi coding room at night with warm peach light, a moonlit window, a sleeping cat, and a computer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#342633"/>
+      <stop offset=".55" stop-color="#2b2129"/>
+      <stop offset="1" stop-color="#211a22"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb5a7" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#5e4352" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4e3949"/>
+      <stop offset="1" stop-color="#2b2129"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1030" cy="36" r="220" fill="url(#glow)"/>
+  <path d="M36 32h1128v356H36z" fill="none" stroke="#5e4352" stroke-opacity=".65" stroke-width="2"/>
+  <path d="M60 356h1080" stroke="#5e4352" stroke-width="2" opacity=".8"/>
+  <g fill="#fcd5ce" opacity=".6">
+    <circle cx="85" cy="78" r="2"/><circle cx="542" cy="75" r="2"/><circle cx="616" cy="118" r="2"/>
+    <circle cx="1110" cy="104" r="2"/><circle cx="676" cy="66" r="2"/><circle cx="109" cy="302" r="2"/>
+    <path d="M715 88h9v2h-9zM1052 166h9v2h-9zM627 305h9v2h-9z"/>
+  </g>
+  <g transform="translate(82 92)">
+    <rect width="410" height="250" rx="12" fill="#2b2129" stroke="#5e4352" stroke-width="3"/>
+    <rect x="12" y="12" width="386" height="226" rx="6" fill="#382a36"/>
+    <path d="M12 174h386v64H12z" fill="#302430"/>
+    <path d="M12 201h386v37H12z" fill="#29202a"/>
+    <path d="M12 188h386v13H12z" fill="#5e4352" opacity=".55"/>
+    <circle cx="312" cy="68" r="32" fill="#fcd5ce"/>
+    <circle cx="327" cy="56" r="28" fill="#382a36"/>
+    <g fill="#f8edeb" opacity=".75">
+      <path d="M82 48h6v6h-6zM144 90h5v5h-5zM248 116h7v7h-7zM52 128h5v5h-5zM367 83h5v5h-5z"/>
+    </g>
+    <path d="M12 180h386v58H12z" fill="#2b2129"/>
+    <path d="M12 210h47v-28h18v28h36v-43h23v43h29v-24h21v24h35v-50h24v50h28v-29h18v29h75v28H12z" fill="#211a22"/>
+    <path d="M22 232h366" stroke="#5e4352" stroke-width="3"/>
+  </g>
+  <text x="84" y="70" fill="#ffb5a7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="4">REP-JULIAN  /  BUILD LOG</text>
+
+  <text x="548" y="144" fill="#f8edeb" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="700">Hello, I’m Julian</text>
+  <rect x="550" y="164" width="70" height="4" rx="2" fill="#ffb5a7"/>
+  <text x="548" y="207" fill="#fcd5ce" font-family="Segoe UI, Arial, sans-serif" font-size="21">Developer · Student · Curious maker</text>
+  <text x="548" y="248" fill="#f8edeb" fill-opacity=".78" font-family="Segoe UI, Arial, sans-serif" font-size="17">I turn ideas into useful apps, one thoughtful detail at a time.</text>
+
+  <g transform="translate(548 287)">
+    <rect width="150" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#806074"/>
+    <circle cx="19" cy="18" r="5" fill="#ffb5a7"/>
+    <text x="34" y="23" fill="#f8edeb" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1">MAKING THINGS</text>
+  </g>
+
+  <g transform="translate(770 176)">
+    <path d="M0 147h353v12H0z" fill="#5e4352"/>
+    <rect x="39" y="10" width="212" height="133" rx="10" fill="#5e4352"/>
+    <rect x="48" y="19" width="194" height="114" rx="5" fill="url(#screen)"/>
+    <path d="M67 42h57M67 60h91M67 78h68M67 96h104" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+    <path d="M173 42h43M173 60h52M173 78h39M173 96h47" stroke="#ffb5a7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M122 143h48l16 19h-80z" fill="#806074"/>
+    <path d="M67 164h173" stroke="#fcd5ce" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+    <rect x="265" y="119" width="53" height="37" rx="7" fill="#ffb5a7"/>
+    <path d="M318 127h10a11 11 0 0 1 0 22h-10" fill="none" stroke="#ffb5a7" stroke-width="6"/>
+    <path d="M279 111c-8-11 8-13 0-23M297 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <path d="M11 163c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
+    <path d="M31 163c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
+    <rect x="0" y="160" width="78" height="15" rx="5" fill="#5e4352"/>
+    <g transform="translate(206 121)">
+      <path d="M0 18c2-17 13-27 27-28l11 12 11-12c16 2 27 12 29 28-8 16-20 23-39 23S8 34 0 18z" fill="#fcd5ce"/>
+      <path d="M5 9l2-25 21 15M60-1l21-15 2 25" fill="#ffb5a7"/>
+      <path d="M22 15h4M50 15h4M34 24l5 3 5-3" stroke="#2b2129" stroke-width="3" stroke-linecap="round"/>
+      <path d="M29 39v10M43 39v10" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="83" y="382" fill="#fcd5ce" fill-opacity=".72" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="2">COFFEE  ·  CURIOSITY  ·  CODE</text>
+  <text x="1113" y="382" text-anchor="end" fill="#fcd5ce" fill-opacity=".72" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">take it one commit at a time_</text>
+</svg>
