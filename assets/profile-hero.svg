@@ -84,19 +84,19 @@
   </g>
 
   <!-- Top System Stamp -->
-  <text x="84" y="70" fill="#ffb5a7" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="4">REP-JULIAN  /  SYSTEM ACTIVE</text>
+  <text x="84" y="70" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', 'JetBrains Mono', monospace" font-size="13" font-weight="900" letter-spacing="4">REP-JULIAN  /  SYSTEM ACTIVE</text>
 
   <!-- Center Typography -->
-  <text x="548" y="144" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.5">Hello, I’m Julian</text>
+  <text x="548" y="144" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="48" font-weight="900" letter-spacing="-0.5">Hello, I’m Julian</text>
   <rect x="550" y="164" width="70" height="4" rx="2" fill="#ffb5a7"/>
-  <text x="548" y="207" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="500">Developer · Student · Curious Maker</text>
-  <text x="548" y="248" fill="#f8edeb" fill-opacity=".85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">I craft cozy digital experiences and intuitive web interfaces.</text>
+  <text x="548" y="207" fill="#fcd5ce" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="21" font-weight="900">Developer · Student · Curious Maker</text>
+  <text x="548" y="248" fill="#f8edeb" fill-opacity=".85" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="16" font-weight="900">I craft cozy digital experiences and intuitive web interfaces.</text>
 
   <!-- Status Pill -->
   <g transform="translate(548 287)">
-    <rect width="180" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
+    <rect width="190" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
     <circle class="beacon-dot" cx="19" cy="18" r="5" fill="#ffb5a7"/>
-    <text x="34" y="23" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1">SHIPPING AT NIGHT</text>
+    <text x="34" y="23" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="12" font-weight="900" letter-spacing="1">SHIPPING AT NIGHT</text>
   </g>
 
   <!-- Desk & Computer Scene -->

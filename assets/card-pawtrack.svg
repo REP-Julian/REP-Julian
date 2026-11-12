@@ -16,10 +16,10 @@
     <rect width="36" height="36" rx="8" fill="#3a2a37" stroke="#5e4352" stroke-width="1" />
     <text x="18" y="24" text-anchor="middle" font-size="18">🐾</text>
     
-    <text x="48" y="18" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">PawTrackManagement</text>
+    <text x="48" y="18" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="15" font-weight="900">PawTrackManagement</text>
     <!-- Pulsing dot + status -->
     <circle class="live-sprint-dot" cx="52" cy="29" r="3.5" fill="#ffb5a7" />
-    <text x="60" y="32" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">FLAGSHIP SPRINT</text>
+    <text x="60" y="32" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', monospace" font-size="10.5" font-weight="900">FLAGSHIP SPRINT</text>
   </g>
 
   <!-- Description -->
