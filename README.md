@@ -8,7 +8,7 @@
 <!-- Typing Subtitle -->
 <p align="center">
   <a href="https://github.com/REP-Julian">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1000&color=FFB5A7&center=true&vCenter=true&repeat=true&width=600&height=40&lines=%E2%9C%A7+frontend+developer+%C2%B7+ui%2Fux+craftsman+%C2%B7+pet+tech+builder+%E2%9C%A7;%E2%9C%A7+turning+caffeine+and+lo-fi+beats+into+responsive+apps+%E2%9C%A7;%E2%9C%A7+make+it+useful+%C2%B7+make+it+clear+%C2%B7+make+it+feel+good+%E2%9C%A7" alt="Typing Subtitle" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1000&color=FFB5A7&center=true&vCenter=true&repeat=true&width=620&height=40&lines=%E2%9C%A7+ai+automation+engineer+%C2%B7+python+%26+javascript+builder+%E2%9C%A7;%E2%9C%A7+turning+caffeine+and+lo-fi+beats+into+autonomous+tools+%E2%9C%A7;%E2%9C%A7+make+it+useful+%C2%B7+make+it+clear+%C2%B7+make+it+feel+good+%E2%9C%A7" alt="Typing Subtitle" />
   </a>
 </p>
 
@@ -34,10 +34,10 @@
       <br /><br />
       <b style="color: #ffb5a7; font-size: 1.25rem;">Julian Agustino</b><br />
       <samp style="color: #fcd5ce;">@REP-Julian</samp><br />
-      <sub>Developer · Student · UI Craftsman</sub>
+      <sub>Developer · Student · Automation Craftsman</sub>
       <br /><br />
       <p style="color: #f8edeb; font-size: 0.9rem;">
-        Building delightful digital spaces with clean code and warm aesthetics.
+        Building AI automation tools, browser overlays, and desktop utilities with clean code and warm aesthetics.
       </p>
       <p>
         <img src="https://img.shields.io/badge/☕_Fuel-Dark_Roast-ffb5a7?style=flat-square&labelColor=2b2129" />
@@ -63,17 +63,17 @@
 <table align="center">
   <tr>
     <td align="center" valign="middle">
-      <sub><b>Frontend Ecosystem</b></sub><br /><br />
+      <sub><b>Automation, Languages &amp; Runtime</b></sub><br /><br />
       <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs&theme=dark" alt="Frontend" />
+        <img src="https://skillicons.dev/icons?i=py,js,ts,nodejs,bash,regex&theme=dark" alt="Languages & Runtime" />
       </a>
     </td>
   </tr>
   <tr>
     <td align="center" valign="middle">
-      <sub><b>Backend, Design &amp; DevOps Tooling</b></sub><br /><br />
+      <sub><b>Tools, Database &amp; Desktop Ecosystem</b></sub><br /><br />
       <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=nodejs,py,git,github,vscode,figma&theme=dark" alt="Backend & Tools" />
+        <img src="https://skillicons.dev/icons?i=git,github,mysql,vscode,figma,postman&theme=dark" alt="Tools & DB" />
       </a>
     </td>
   </tr>
@@ -88,25 +88,37 @@
 <table align="center" width="100%">
   <tr>
     <td width="50%" align="center">
-      <a href="https://github.com/REP-Julian/PawTrackManagement">
-        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-pawtrack.svg" width="100%" alt="PawTrackManagement" />
+      <a href="https://github.com/REP-Julian/Google-Forms-Universal-AI-Assistant">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-gforms.svg" width="100%" alt="Google-Forms-Universal-AI-Assistant" />
       </a>
     </td>
     <td width="50%" align="center">
-      <a href="https://github.com/REP-Julian/Lost-and-Found">
-        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-lostfound.svg" width="100%" alt="Lost-and-Found" />
+      <a href="https://github.com/REP-Julian/Google-Meet-and-Microsoft-Teams-Class-Companion">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-classcompanion.svg" width="100%" alt="Google-Meet-and-Microsoft-Teams-Class-Companion" />
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <a href="https://github.com/REP-Julian/Paw-Connect">
-        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-pawconnect.svg" width="100%" alt="Paw-Connect" />
+      <a href="https://github.com/REP-Julian/Video-to-Audio-Converter-Offline">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-videoaudio.svg" width="100%" alt="Video-to-Audio-Converter-Offline" />
       </a>
     </td>
     <td width="50%" align="center">
-      <a href="https://github.com/REP-Julian/Portfolio">
-        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-portfolio.svg" width="100%" alt="Portfolio" />
+      <a href="https://github.com/REP-Julian/Social-Media-Autonomous-Report-V2">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-smar.svg" width="100%" alt="Social-Media-Autonomous-Report-V2" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/REP-Julian/sql-cli">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-sqlcli.svg" width="100%" alt="sql-cli" />
+      </a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/REP-Julian/StepUp-X-Google-Fit">
+        <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/card-stepup.svg" width="100%" alt="StepUp-X-Google-Fit" />
       </a>
     </td>
   </tr>

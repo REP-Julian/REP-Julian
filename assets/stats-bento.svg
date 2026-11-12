@@ -17,7 +17,7 @@
       <stop offset="100%" stop-color="#9a6e88" />
     </linearGradient>
     <style>
-      /* Tranquil Radar Ping (Slow, subtle, cross-browser safe transform) */
+      /* Tranquil Radar Ping */
       @keyframes radarPing {
         0% { transform: scale(1); opacity: 0.9; }
         70% { transform: scale(2.6); opacity: 0; }
@@ -82,36 +82,36 @@
     <rect width="320" height="254" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="20" y="28" class="bento-title">CORE LANGUAGE STACK</text>
 
-    <!-- TS -->
+    <!-- Python -->
     <g transform="translate(20, 50)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">TypeScript</text>
-      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">45%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Python</text>
+      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">50%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="126" height="7" rx="3.5" fill="url(#bar-ts)" />
+      <rect x="0" y="22" width="140" height="7" rx="3.5" fill="url(#bar-ts)" />
     </g>
 
-    <!-- React / Next -->
+    <!-- JavaScript -->
     <g transform="translate(20, 98)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">React &amp; Next.js</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">JavaScript &amp; Userscripts</text>
       <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">30%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
       <rect x="0" y="22" width="84" height="7" rx="3.5" fill="url(#bar-js)" />
     </g>
 
-    <!-- JS & CSS -->
+    <!-- Playwright & Automation -->
     <g transform="translate(20, 146)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">HTML5 &amp; Modern CSS</text>
-      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">15%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Playwright &amp; Automation</text>
+      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">12%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="42" height="7" rx="3.5" fill="url(#bar-react)" />
+      <rect x="0" y="22" width="34" height="7" rx="3.5" fill="url(#bar-react)" />
     </g>
 
-    <!-- Python / Tools -->
+    <!-- Local AI & APIs -->
     <g transform="translate(20, 194)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Python &amp; Git Tooling</text>
-      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">10%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Local AI &amp; Cloud APIs</text>
+      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">8%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="28" height="7" rx="3.5" fill="#ffb5a7" />
+      <rect x="0" y="22" width="22" height="7" rx="3.5" fill="#ffb5a7" />
     </g>
   </g>
 
@@ -130,16 +130,16 @@
     <!-- Project Identity Card -->
     <g transform="translate(18, 86)">
       <rect width="200" height="82" rx="8" fill="#342531" stroke="#5e4352" stroke-width="1" />
-      <text x="12" y="25" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="13" font-weight="900">PawTrackManagement</text>
-      <text x="12" y="45" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">Pet care &amp; community</text>
-      <text x="12" y="61" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">adoption network 🐾</text>
+      <text x="12" y="25" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="12" font-weight="900">Google-Forms-AI</text>
+      <text x="12" y="45" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">AI browser overlay &amp;</text>
+      <text x="12" y="61" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">real-time automation 🤖</text>
     </g>
 
     <!-- Sprint Stats -->
     <g transform="translate(18, 188)">
-      <text x="0" y="16" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="11" opacity="0.8">Status: Active Dev</text>
-      <text x="0" y="34" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="11" opacity="0.8">Focus: UI Polish &amp; Auth</text>
-      <text x="0" y="52" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Branch: v1.0-release ↗</text>
+      <text x="0" y="16" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="11" opacity="0.8">Status: Public Release</text>
+      <text x="0" y="34" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="11" opacity="0.8">Focus: Vision &amp; Overlays</text>
+      <text x="0" y="52" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Branch: main ↗</text>
     </g>
   </g>
 </svg>

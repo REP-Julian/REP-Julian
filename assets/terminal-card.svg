@@ -32,7 +32,7 @@
   <text x="290" y="24" text-anchor="middle" fill="#ffb5a7" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="11.5" font-weight="600">julian.config.ts</text>
 
   <!-- Code Body -->
-  <g font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="12.5" xml:space="preserve">
+  <g font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="12" xml:space="preserve">
     <!-- Line 1 -->
     <text x="24" y="68">
       <tspan class="t-key">const</tspan> <tspan class="t-val">engineer</tspan> <tspan class="t-punct">=</tspan> <tspan class="t-punct">{</tspan>
@@ -50,17 +50,17 @@
 
     <!-- Line 4 -->
     <text x="44" y="143">
-      <tspan class="t-val">role:</tspan> <tspan class="t-str">"Frontend Developer &amp; UI Craftsman"</tspan><tspan class="t-punct">,</tspan>
+      <tspan class="t-val">focus:</tspan> <tspan class="t-str">"AI Automation, Userscripts &amp; Tooling"</tspan><tspan class="t-punct">,</tspan>
     </text>
 
     <!-- Line 5 -->
     <text x="44" y="168">
-      <tspan class="t-val">coreStack:</tspan> <tspan class="t-punct">[</tspan><tspan class="t-str">"React"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"Next.js"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"TypeScript"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"CSS"</tspan><tspan class="t-punct">],</tspan>
+      <tspan class="t-val">coreStack:</tspan> <tspan class="t-punct">[</tspan><tspan class="t-str">"Python"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"JavaScript"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"Playwright"</tspan><tspan class="t-punct">, </tspan><tspan class="t-str">"Ollama"</tspan><tspan class="t-punct">],</tspan>
     </text>
 
     <!-- Line 6 -->
     <text x="44" y="193">
-      <tspan class="t-val">shippingNow:</tspan> <tspan class="t-str">"PawTrackManagement 🐾"</tspan><tspan class="t-punct">,</tspan>
+      <tspan class="t-val">shippingNow:</tspan> <tspan class="t-str">"Google-Forms-Universal-AI-Assistant 🤖"</tspan><tspan class="t-punct">,</tspan>
     </text>
 
     <!-- Line 7 -->
