@@ -1,12 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 8">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 6" width="100%">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2b2129" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#5e4352" stop-opacity="0.5"/>
-      <stop offset="50%" stop-color="#ffb5a7" stop-opacity="0.7"/>
-      <stop offset="85%" stop-color="#5e4352" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#2b2129" stop-opacity="0"/>
+    <linearGradient id="base-track" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2b2129" stop-opacity="0" />
+      <stop offset="20%" stop-color="#5e4352" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#5e4352" stop-opacity="0.6" />
+      <stop offset="80%" stop-color="#5e4352" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#2b2129" stop-opacity="0" />
     </linearGradient>
+    <linearGradient id="pulse-beam" x1="-100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity="0" />
+      <stop offset="35%" stop-color="#ffb5a7" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffb5a7" stop-opacity="0.95" />
+      <stop offset="65%" stop-color="#fcd5ce" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#5e4352" stop-opacity="0" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="3.5s" repeatCount="indefinite" />
+    </linearGradient>
+    <filter id="glow-div" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <line x1="0" y1="4" x2="800" y2="4" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Background subtle track -->
+  <rect width="800" height="2" y="2" rx="1" fill="url(#base-track)" />
+  <!-- Traveling light pulse beam -->
+  <rect width="800" height="2.5" y="1.75" rx="1.25" fill="url(#pulse-beam)" filter="url(#glow-div)" />
 </svg>

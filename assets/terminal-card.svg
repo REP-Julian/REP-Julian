@@ -2,11 +2,24 @@
   <defs>
     <linearGradient id="term-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#241b23" />
-      <stop offset="100%" stop-color="#1b141a" />
+      <stop offset="100%" stop-color="#1a1319" />
     </linearGradient>
+    <linearGradient id="scan-beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffb5a7" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffb5a7" stop-opacity="0" />
+      <animate attributeName="y1" from="-50%" to="100%" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="y2" from="0%" to="150%" dur="4s" repeatCount="indefinite" />
+    </linearGradient>
+    <filter id="cursor-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
     <style>
       @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes lineGlow { 0%, 100% { opacity: 0.85; } 50% { opacity: 1; } }
+      .cursor { animation: blink 0.9s step-end infinite; }
+      .active-cmd { animation: lineGlow 2.5s ease-in-out infinite; }
       .t-key { fill: #ffb5a7; font-weight: 600; }
       .t-str { fill: #fcd5ce; }
       .t-val { fill: #f8edeb; }
@@ -17,6 +30,9 @@
 
   <!-- Terminal Window Shell -->
   <rect width="580" height="330" rx="14" fill="url(#term-bg)" stroke="#5e4352" stroke-width="2" />
+
+  <!-- Scanline Beam Pass -->
+  <rect width="580" height="330" rx="14" fill="url(#scan-beam)" />
 
   <!-- Top Bar -->
   <rect width="580" height="38" rx="14" fill="#30232e" />
@@ -81,8 +97,8 @@
 
     <!-- Line 10 (Interactive command line) -->
     <text x="24" y="298">
-      <tspan class="t-key">julian</tspan><tspan class="t-punct"> $ </tspan><tspan class="t-val">pnpm run make-magic</tspan>
-      <tspan class="cursor" fill="#ffb5a7">▋</tspan>
+      <tspan class="t-key">julian</tspan><tspan class="t-punct"> $ </tspan><tspan class="t-val active-cmd">pnpm run make-magic</tspan>
+      <tspan class="cursor" fill="#ffb5a7" filter="url(#cursor-glow)">▋</tspan>
     </text>
   </g>
 </svg>

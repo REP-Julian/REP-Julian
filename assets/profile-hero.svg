@@ -8,40 +8,88 @@
       <stop offset="100%" stop-color="#211a22"/>
     </linearGradient>
     <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffb5a7" stop-opacity=".25"/>
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity=".3"/>
       <stop offset="100%" stop-color="#5e4352" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#4e3949"/>
       <stop offset="100%" stop-color="#2b2129"/>
     </linearGradient>
+    <linearGradient id="desk-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#2b2129" stop-opacity="0" />
+    </linearGradient>
     <style>
-      @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
-      @keyframes steam { 0% { transform: translateY(0); opacity: 0.75; } 50% { transform: translateY(-7px); opacity: 0.35; } 100% { transform: translateY(-14px); opacity: 0; } }
-      @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.85); } }
+      /* Astronomical Star Twinkle Frequencies */
+      @keyframes twinkle1 { 0%, 100% { opacity: 0.2; transform: scale(0.85); } 50% { opacity: 0.95; transform: scale(1.2); } }
+      @keyframes twinkle2 { 0%, 100% { opacity: 0.85; transform: scale(1.1); } 50% { opacity: 0.2; transform: scale(0.8); } }
+      @keyframes twinkle3 { 0%, 100% { opacity: 0.3; } 35% { opacity: 1; } 70% { opacity: 0.25; } }
       
-      .star-1 { animation: twinkle 2.5s ease-in-out infinite; }
-      .star-2 { animation: twinkle 3.8s ease-in-out 1.2s infinite; }
-      .star-3 { animation: twinkle 3.1s ease-in-out 2.0s infinite; }
-      .steam-line { animation: steam 3s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
-      .live-status { animation: pulse-dot 2.2s ease-in-out infinite; transform-origin: 567px 305px; }
+      /* Organic Fluid Steam Curves */
+      @keyframes steamA {
+        0% { transform: translate(0, 0) scaleX(1); opacity: 0.75; }
+        50% { transform: translate(3px, -8px) scaleX(1.3); opacity: 0.4; }
+        100% { transform: translate(-2px, -18px) scaleX(0.8); opacity: 0; }
+      }
+      @keyframes steamB {
+        0% { transform: translate(0, 0) scaleX(1); opacity: 0.65; }
+        50% { transform: translate(-4px, -10px) scaleX(1.2); opacity: 0.35; }
+        100% { transform: translate(3px, -20px) scaleX(0.9); opacity: 0; }
+      }
+
+      /* Sleeping Cat Respiration Cycle (4-second resting rate) */
+      @keyframes catBreathe {
+        0%, 100% { transform: translateY(0) scale(1, 1); }
+        50% { transform: translateY(-1.5px) scale(1.02, 1.035); }
+      }
+
+      /* Monitor Ambient Desk Glow */
+      @keyframes monitorBreathe {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.32; }
+      }
+
+      /* Internal Screen Code Cursor */
+      @keyframes screenCursor { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+      /* Telemetry Status Beacon */
+      @keyframes pulseRing {
+        0% { r: 5px; opacity: 1; }
+        60% { r: 12px; opacity: 0.2; }
+        100% { r: 16px; opacity: 0; }
+      }
+
+      .s1 { animation: twinkle1 2.8s ease-in-out infinite; transform-origin: center; }
+      .s2 { animation: twinkle2 3.6s ease-in-out 0.8s infinite; transform-origin: center; }
+      .s3 { animation: twinkle3 4.2s ease-in-out 1.5s infinite; transform-origin: center; }
+      
+      .steam-1 { animation: steamA 3.2s ease-out infinite; }
+      .steam-2 { animation: steamB 3.8s ease-out 1.2s infinite; }
+      
+      .sleeping-cat { animation: catBreathe 4s ease-in-out infinite; transform-origin: 240px 145px; }
+      .ambient-glow { animation: monitorBreathe 5s ease-in-out infinite; }
+      .screen-blink { animation: screenCursor 1s step-end infinite; }
+      .status-pulse-ring { animation: pulseRing 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; transform-origin: 567px 305px; }
     </style>
   </defs>
 
+  <!-- Ambient Wall -->
   <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
   <circle cx="1030" cy="36" r="220" fill="url(#glow)"/>
   <path d="M36 32h1128v356H36z" fill="none" stroke="#5e4352" stroke-opacity=".65" stroke-width="2"/>
   <path d="M60 356h1080" stroke="#5e4352" stroke-width="2" opacity=".8"/>
 
-  <!-- Stars -->
+  <!-- Twinkling Starfield -->
   <g fill="#fcd5ce">
-    <circle class="star-1" cx="85" cy="78" r="2.5"/>
-    <circle class="star-2" cx="542" cy="75" r="2.5"/>
-    <circle class="star-3" cx="616" cy="118" r="2.5"/>
-    <circle class="star-1" cx="1110" cy="104" r="2.5"/>
-    <circle class="star-2" cx="676" cy="66" r="2.5"/>
-    <circle class="star-3" cx="109" cy="302" r="2.5"/>
-    <path class="star-1" d="M715 88h9v2h-9zM1052 166h9v2h-9zM627 305h9v2h-9z"/>
+    <circle class="s1" cx="85" cy="78" r="2.8"/>
+    <circle class="s2" cx="542" cy="75" r="2.4"/>
+    <circle class="s3" cx="616" cy="118" r="2.6"/>
+    <circle class="s1" cx="1110" cy="104" r="3"/>
+    <circle class="s2" cx="676" cy="66" r="2.5"/>
+    <circle class="s3" cx="109" cy="302" r="2.2"/>
+    <circle class="s1" cx="470" cy="45" r="2.4"/>
+    <circle class="s2" cx="980" cy="62" r="2.8"/>
+    <path class="s3" d="M715 88h9v2h-9zM1052 166h9v2h-9zM627 305h9v2h-9z"/>
   </g>
 
   <!-- Left Window Illustration -->
@@ -51,17 +99,23 @@
     <path d="M12 174h386v64H12z" fill="#302430"/>
     <path d="M12 201h386v37H12z" fill="#29202a"/>
     <path d="M12 188h386v13H12z" fill="#5e4352" opacity=".55"/>
+    <!-- Moon -->
     <circle cx="312" cy="68" r="32" fill="#fcd5ce"/>
     <circle cx="327" cy="56" r="28" fill="#382a36"/>
     <g fill="#f8edeb" opacity=".75">
-      <path d="M82 48h6v6h-6zM144 90h5v5h-5zM248 116h7v7h-7zM52 128h5v5h-5zM367 83h5v5h-5z"/>
+      <path class="s1" d="M82 48h6v6h-6z"/>
+      <path class="s2" d="M144 90h5v5h-5z"/>
+      <path class="s3" d="M248 116h7v7h-7z"/>
+      <path class="s1" d="M52 128h5v5h-5z"/>
+      <path class="s2" d="M367 83h5v5h-5z"/>
     </g>
+    <!-- Distant Cityscape -->
     <path d="M12 180h386v58H12z" fill="#2b2129"/>
     <path d="M12 210h47v-28h18v28h36v-43h23v43h29v-24h21v24h35v-50h24v50h28v-29h18v29h75v28H12z" fill="#211a22"/>
     <path d="M22 232h366" stroke="#5e4352" stroke-width="3"/>
   </g>
 
-  <!-- Top Code Stamp -->
+  <!-- Top System Stamp -->
   <text x="84" y="70" fill="#ffb5a7" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="4">REP-JULIAN  /  SYSTEM ACTIVE</text>
 
   <!-- Center Typography -->
@@ -70,37 +124,52 @@
   <text x="548" y="207" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="500">Developer · Student · Curious Maker</text>
   <text x="548" y="248" fill="#f8edeb" fill-opacity=".85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">I craft cozy digital experiences and intuitive web interfaces.</text>
 
-  <!-- Interactive Status Pill -->
+  <!-- Interactive Status Pill with Concentric Sonar Pulse -->
   <g transform="translate(548 287)">
     <rect width="180" height="36" rx="18" fill="#5e4352" fill-opacity=".7" stroke="#ffb5a7" stroke-width="1.2"/>
-    <circle class="live-status" cx="19" cy="18" r="5" fill="#ffb5a7"/>
+    <!-- Sonar ring -->
+    <circle cx="19" cy="18" r="6" class="status-pulse-ring" fill="none" stroke="#ffb5a7" stroke-width="1.5" />
+    <circle cx="19" cy="18" r="5" fill="#ffb5a7"/>
     <text x="34" y="23" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1">SHIPPING AT NIGHT</text>
   </g>
 
   <!-- Desk & Computer Scene -->
   <g transform="translate(770 176)">
+    <!-- Desk surface -->
     <path d="M0 147h353v12H0z" fill="#5e4352"/>
+    
+    <!-- Monitor Back & Screen -->
     <rect x="39" y="10" width="212" height="133" rx="10" fill="#5e4352"/>
     <rect x="48" y="19" width="194" height="114" rx="5" fill="url(#screen)"/>
+
+    <!-- Desk Ambient Light Cast -->
+    <polygon class="ambient-glow" points="48,133 242,133 300,164 10,164" fill="url(#desk-light)" />
+
+    <!-- Code Lines on Monitor -->
     <path d="M67 42h57M67 60h91M67 78h68M67 96h104" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
-    <path d="M173 42h43M173 60h52M173 78h39M173 96h47" stroke="#ffb5a7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M173 42h43M173 60h52M173 78h39" stroke="#ffb5a7" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Blinking Code Cursor on Screen -->
+    <rect class="screen-blink" x="175" y="93" width="7" height="6" rx="1" fill="#ffb5a7" />
+
+    <!-- Monitor Stand -->
     <path d="M122 143h48l16 19h-80z" fill="#806074"/>
     <path d="M67 164h173" stroke="#fcd5ce" stroke-width="6" stroke-linecap="round" opacity=".8"/>
     
-    <!-- Warm Coffee Cup & Steam -->
+    <!-- Warm Coffee Cup & Organic Steam Wisps -->
     <rect x="265" y="119" width="53" height="37" rx="7" fill="#ffb5a7"/>
     <path d="M318 127h10a11 11 0 0 1 0 22h-10" fill="none" stroke="#ffb5a7" stroke-width="6"/>
-    <!-- Steam Lines Animated -->
-    <path class="steam-line" d="M279 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round"/>
-    <path class="steam-line" d="M297 111c-8-11 8-13 0-23" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round"/>
+    <!-- Animated Curved Steam -->
+    <path class="steam-1" d="M280 112 Q274 100 282 88 T276 74" fill="none" stroke="#fcd5ce" stroke-width="3" stroke-linecap="round" />
+    <path class="steam-2" d="M298 112 Q306 98 296 86 T304 72" fill="none" stroke="#fcd5ce" stroke-width="2.8" stroke-linecap="round" />
 
     <!-- Potted Plant -->
     <path d="M11 163c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
     <path d="M31 163c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
     <rect x="0" y="160" width="78" height="15" rx="5" fill="#5e4352"/>
 
-    <!-- Cozy Sleeping Cat -->
-    <g transform="translate(206 121)">
+    <!-- Breathing Sleeping Cat with Physics-Calibrated Cycle -->
+    <g class="sleeping-cat" transform="translate(206 121)">
       <path d="M0 18c2-17 13-27 27-28l11 12 11-12c16 2 27 12 29 28-8 16-20 23-39 23S8 34 0 18z" fill="#fcd5ce"/>
       <path d="M5 9l2-25 21 15M60-1l21-15 2 25" fill="#ffb5a7"/>
       <path d="M22 15h4M50 15h4M34 24l5 3 5-3" stroke="#2b2129" stroke-width="3" stroke-linecap="round"/>

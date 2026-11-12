@@ -16,45 +16,58 @@
       <stop offset="0%" stop-color="#5e4352" />
       <stop offset="100%" stop-color="#9a6e88" />
     </linearGradient>
+    <linearGradient id="shimmer-bar" x1="-100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffb5a7" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffb5a7" stop-opacity="0" />
+      <animate attributeName="x1" from="-100%" to="200%" dur="3.8s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="300%" dur="3.8s" repeatCount="indefinite" />
+    </linearGradient>
     <filter id="bento-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
     <style>
-      @keyframes radar-pulse {
-        0% { r: 4px; opacity: 1; }
-        50% { r: 12px; opacity: 0.3; }
-        100% { r: 16px; opacity: 0; }
+      /* Radar Tri-Ring Ping */
+      @keyframes sonar1 { 0% { r: 5px; opacity: 1; } 70% { r: 16px; opacity: 0.15; } 100% { r: 22px; opacity: 0; } }
+      @keyframes sonar2 { 0% { r: 5px; opacity: 1; } 70% { r: 16px; opacity: 0.15; } 100% { r: 22px; opacity: 0; } }
+      
+      /* Subtle Tabular Numeral Glow Breathing */
+      @keyframes numBreathe {
+        0%, 100% { fill: #f8edeb; }
+        50% { fill: #ffffff; filter: drop-shadow(0 0 4px rgba(255, 181, 167, 0.4)); }
       }
-      .pulse-ring { animation: radar-pulse 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite; transform-origin: 24px 24px; }
+
+      .sonar-wave-1 { animation: sonar1 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; transform-origin: 28px 28px; }
+      .sonar-wave-2 { animation: sonar2 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1.2s infinite; transform-origin: 28px 28px; }
+      .num-glow { animation: numBreathe 4s ease-in-out infinite; }
+
       .bento-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; fill: #ffb5a7; }
-      .bento-num { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 26px; font-weight: 800; fill: #f8edeb; font-variant-numeric: tabular-nums; }
+      .bento-num { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; }
       .bento-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: #fcd5ce; opacity: 0.8; }
     </style>
   </defs>
 
   <!-- BACKGROUND GRID CANVAS -->
-  <rect width="900" height="300" rx="18" fill="#1e161d" stroke="#5e4352" stroke-width="2" />
+  <rect width="900" height="300" rx="18" fill="#1e161d" stroke="#5e4352" stroke-width="1.8" />
 
-  <!-- ================= TILE 1: CORE METRICS (Left top) ================= -->
+  <!-- ================= TILE 1: CORE METRICS ================= -->
   <g transform="translate(18, 18)">
     <rect width="280" height="126" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="18" y="28" class="bento-title">TELEMETRY // VOLUME</text>
     <g transform="translate(18, 48)">
-      <!-- Metric A -->
       <g>
-        <text x="0" y="24" class="bento-num">10+</text>
+        <text x="0" y="24" class="bento-num num-glow">10+</text>
         <text x="0" y="42" class="bento-sub">Active Repositories</text>
       </g>
-      <!-- Metric B -->
       <g transform="translate(140, 0)">
-        <text x="0" y="24" class="bento-num">380+</text>
+        <text x="0" y="24" class="bento-num num-glow">380+</text>
         <text x="0" y="42" class="bento-sub">Contributions</text>
       </g>
     </g>
   </g>
 
-  <!-- ================= TILE 2: CRAFT & HABITS (Left bottom) ================= -->
+  <!-- ================= TILE 2: CRAFT & HABITS ================= -->
   <g transform="translate(18, 156)">
     <rect width="280" height="126" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="18" y="28" class="bento-title">RHYTHM // HABITS</text>
@@ -70,7 +83,7 @@
     </g>
   </g>
 
-  <!-- ================= TILE 3: LANGUAGE ARCHITECTURE (Middle) ================= -->
+  <!-- ================= TILE 3: LANGUAGE ARCHITECTURE WITH SHIMMER ================= -->
   <g transform="translate(312, 18)">
     <rect width="320" height="264" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="20" y="28" class="bento-title">CORE LANGUAGE STACK</text>
@@ -81,6 +94,7 @@
       <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">45%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
       <rect x="0" y="22" width="126" height="7" rx="3.5" fill="url(#bar-ts)" />
+      <rect x="0" y="22" width="126" height="7" rx="3.5" fill="url(#shimmer-bar)" />
     </g>
 
     <!-- React / Next -->
@@ -89,6 +103,7 @@
       <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">30%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
       <rect x="0" y="22" width="84" height="7" rx="3.5" fill="url(#bar-js)" />
+      <rect x="0" y="22" width="84" height="7" rx="3.5" fill="url(#shimmer-bar)" />
     </g>
 
     <!-- JS & CSS -->
@@ -108,14 +123,18 @@
     </g>
   </g>
 
-  <!-- ================= TILE 4: FLAGSHIP SPRINT (Right) ================= -->
+  <!-- ================= TILE 4: FLAGSHIP SPRINT WITH CONCENTRIC RADAR ================= -->
   <g transform="translate(646, 18)">
     <rect width="236" height="264" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="18" y="28" class="bento-title">ACTIVE HORIZON</text>
 
-    <!-- Pulsing Radar Indicator -->
+    <!-- Pulsing Radar with Dual Waves -->
     <g transform="translate(18, 52)">
-      <circle cx="10" cy="10" r="14" class="pulse-ring" fill="none" stroke="#ffb5a7" stroke-width="2" />
+      <!-- Wave 1 -->
+      <circle cx="10" cy="10" r="5" class="sonar-wave-1" fill="none" stroke="#ffb5a7" stroke-width="1.5" />
+      <!-- Wave 2 -->
+      <circle cx="10" cy="10" r="5" class="sonar-wave-2" fill="none" stroke="#fcd5ce" stroke-width="1.2" />
+      <!-- Center Core -->
       <circle cx="10" cy="10" r="5" fill="#ffb5a7" filter="url(#bento-glow)" />
       <text x="32" y="14" fill="#ffb5a7" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">IN PRODUCTION</text>
     </g>
