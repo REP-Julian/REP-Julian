@@ -56,7 +56,7 @@
         <text x="0" y="44" class="bento-sub">Public Repositories</text>
       </g>
       <g transform="translate(132, 0)">
-        <text x="0" y="24" class="bento-num">380+</text>
+        <text x="0" y="24" class="bento-num">388+</text>
         <text x="0" y="44" class="bento-sub">Git Contributions</text>
       </g>
     </g>
@@ -84,26 +84,26 @@
 
     <!-- Python -->
     <g transform="translate(20, 50)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Python</text>
-      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">50%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">JavaScript</text>
+      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">42%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="140" height="7" rx="3.5" fill="url(#bar-ts)" />
+      <rect x="0" y="22" width="117" height="7" rx="3.5" fill="url(#bar-ts)" />
     </g>
 
     <!-- JavaScript -->
     <g transform="translate(20, 98)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">JavaScript</text>
-      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">30%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">CSS</text>
+      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">20%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="84" height="7" rx="3.5" fill="url(#bar-js)" />
+      <rect x="0" y="22" width="56" height="7" rx="3.5" fill="url(#bar-js)" />
     </g>
 
     <!-- Playwright & Automation -->
     <g transform="translate(20, 146)">
-      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">TypeScript</text>
-      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">12%</text>
+      <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Python</text>
+      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">15%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="33" height="7" rx="3.5" fill="url(#bar-react)" />
+      <rect x="0" y="22" width="42" height="7" rx="3.5" fill="url(#bar-react)" />
     </g>
 
     <!-- Local AI & APIs -->
@@ -130,7 +130,7 @@
     <!-- Project Identity Card -->
     <g transform="translate(18, 86)">
       <rect width="200" height="82" rx="8" fill="#342531" stroke="#5e4352" stroke-width="1" />
-      <text x="12" y="25" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="12" font-weight="900">StepUp-X-Google-F…</text>
+      <text x="12" y="25" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="12" font-weight="900">QCU-WEEK-2-PROJECT</text>
       <text x="12" y="45" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">AI browser overlay &amp;</text>
       <text x="12" y="61" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11" opacity="0.85">real-time automation 🤖</text>
     </g>

@@ -155,34 +155,34 @@
   </thead>
   <tbody>
   <tr>
-    <td><b><a href="https://github.com/REP-Julian/StepUp-X-Google-Fit" style="color: #ffb5a7;">StepUp-X-Google-Fit</a></b></td>
-    <td style="color: #fcd5ce;">Cloud-based step synchronizer and walking cadence injector for Google Fit, Fitbit,...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-Kotlin-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-11-12</samp></td>
+    <td><b><a href="https://github.com/REP-Julian/QCU-WEEK-2-PROJECT" style="color: #ffb5a7;">QCU-WEEK-2-PROJECT</a></b></td>
+    <td style="color: #fcd5ce;">LESSON ON WEEK 2 PROJECT CC101</td>
+    <td align="center"><img src="https://img.shields.io/badge/-Java-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2025-09-06</samp></td>
   </tr>
   <tr>
-    <td><b><a href="https://github.com/REP-Julian/sql-cli" style="color: #ffb5a7;">sql-cli</a></b></td>
-    <td style="color: #fcd5ce;">“Beginner-friendly Python MySQL terminal for XAMPP with live schema autocomplete a...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-Python-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-11-09</samp></td>
+    <td><b><a href="https://github.com/REP-Julian/PawTrackManagement" style="color: #ffb5a7;">PawTrackManagement</a></b></td>
+    <td style="color: #fcd5ce;">This empasize the how pet treatly and help also the people want to adopt a animal ...</td>
+    <td align="center"><img src="https://img.shields.io/badge/-Java-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2025-11-27</samp></td>
   </tr>
   <tr>
-    <td><b><a href="https://github.com/REP-Julian/Google-Forms-Universal-AI-Assistant" style="color: #ffb5a7;">Google-Forms-Universal-AI-Assistant</a></b></td>
-    <td style="color: #fcd5ce;">An AI-powered browser overlay and automation tool for Google Forms. It parses form...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-JavaScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-11-06</samp></td>
+    <td><b><a href="https://github.com/REP-Julian/Portfolio" style="color: #ffb5a7;">Portfolio</a></b></td>
+    <td style="color: #fcd5ce;">No description provided.</td>
+    <td align="center"><img src="https://img.shields.io/badge/-CSS-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-03-08</samp></td>
   </tr>
   <tr>
-    <td><b><a href="https://github.com/REP-Julian/budget-tracker" style="color: #ffb5a7;">budget-tracker</a></b></td>
-    <td style="color: #fcd5ce;">Smart student budget tracker with offline-first logging, multi-wallet savings safe...</td>
+    <td><b><a href="https://github.com/REP-Julian/Calculator-project" style="color: #ffb5a7;">Calculator-project</a></b></td>
+    <td style="color: #fcd5ce;">Project Report since Grade 11 </td>
+    <td align="center"><img src="https://img.shields.io/badge/-CSS-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-03-08</samp></td>
+  </tr>
+  <tr>
+    <td><b><a href="https://github.com/REP-Julian/Lost-and-Found" style="color: #ffb5a7;">Lost-and-Found</a></b></td>
+    <td style="color: #fcd5ce;">The QCU Lost and Found is a lightweight, browser-based prototype designed for Quez...</td>
     <td align="center"><img src="https://img.shields.io/badge/-TypeScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-10-27</samp></td>
-  </tr>
-  <tr>
-    <td><b><a href="https://github.com/REP-Julian/DevJ" style="color: #ffb5a7;">DevJ</a></b></td>
-    <td style="color: #fcd5ce;">Personal developer portfolio showcasing full-stack web applications, UI engineerin...</td>
-    <td align="center"><img src="https://img.shields.io/badge/-JavaScript-3a2a37?style=flat-square&labelColor=2b2129&color=ffb5a7" /></td>
-    <td align="center"><samp style="color: #f8edeb;">2026-10-25</samp></td>
+    <td align="center"><samp style="color: #f8edeb;">2026-04-26</samp></td>
   </tr>
   </tbody>
 </table>
