@@ -21,7 +21,7 @@
       <p>Curious about software, thoughtful interfaces, and tools that make everyday tasks easier.</p>
       <a href="https://github.com/REP-Julian">GitHub profile ↗</a>
     </td>
-    <td width="66%" align="center" valign="middle">
+    <td width="66%" align="center" valign="top">
       <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/cozy-coding-desk.svg" width="100%" alt="Original lo-fi night scene with a glowing window, coding desk, plant, and tea" />
       <br />
       <sub><em>“Slow progress is still progress. Keep creating.”</em></sub>
@@ -47,13 +47,10 @@
     </td>
     <td width="50%" valign="top">
 
-### What I'm exploring
-
-Building practical web projects, improving the details that make them easier to use, and learning new tools along the way.
-
-### Current vibe
-
-**Make it useful. Make it clear. Make it feel good to use.**
+<h3>What I'm exploring</h3>
+<p>Building practical web projects, improving the details that make them easier to use, and learning new tools along the way.</p>
+<h3>Current vibe</h3>
+<p><strong>Make it useful. Make it clear. Make it feel good to use.</strong></p>
 
     </td>
   </tr>
