@@ -17,70 +17,67 @@
       <stop offset="100%" stop-color="#9a6e88" />
     </linearGradient>
     <style>
+      /* Tranquil Radar Ping (Slow, subtle, cross-browser safe transform) */
       @keyframes radarPing {
-        0% { r: 4px; opacity: 1; }
-        70% { r: 14px; opacity: 0.2; }
-        100% { r: 18px; opacity: 0; }
+        0% { transform: scale(1); opacity: 0.9; }
+        70% { transform: scale(2.6); opacity: 0; }
+        100% { transform: scale(2.6); opacity: 0; }
       }
-      .radar-wave-1 {
+      .radar-wave {
         transform-box: fill-box;
         transform-origin: center;
-        animation: radarPing 2.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
-      }
-      .radar-wave-2 {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: radarPing 2.5s cubic-bezier(0.16, 1, 0.3, 1) 1.25s infinite;
+        animation: radarPing 3.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
       }
 
       @keyframes beaconBreathe {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0.6; }
+        50% { opacity: 0.55; }
       }
-      .beacon-core { animation: beaconBreathe 2s ease-in-out infinite; }
+      .beacon-core { animation: beaconBreathe 2.8s ease-in-out infinite; }
 
       .bento-title { font-family: 'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif; font-size: 11px; font-weight: 900; letter-spacing: 1.5px; fill: #ffb5a7; }
       .bento-num { font-family: 'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif; font-size: 26px; font-weight: 900; fill: #f8edeb; font-variant-numeric: tabular-nums; }
-      .bento-sub { font-family: 'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif; font-size: 11.5px; font-weight: 900; fill: #fcd5ce; opacity: 0.8; }
+      .bento-sub { font-family: 'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif; font-size: 11px; font-weight: 900; fill: #fcd5ce; opacity: 0.8; }
     </style>
   </defs>
 
-  <!-- BACKGROUND GRID CANVAS -->
+  <!-- BACKGROUND CANVAS -->
   <rect width="900" height="290" rx="16" fill="#1e161d" stroke="#5e4352" stroke-width="1.6" />
 
-  <!-- ================= TILE 1: CORE METRICS ================= -->
+  <!-- ================= TILE 1: COMPLETE TELEMETRY (Left: Full Height 254px) ================= -->
   <g transform="translate(18, 18)">
-    <rect width="280" height="122" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
-    <text x="18" y="26" class="bento-title">TELEMETRY // VOLUME</text>
-    <g transform="translate(18, 44)">
+    <rect width="280" height="254" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
+    <text x="20" y="28" class="bento-title">DEVELOPER TELEMETRY</text>
+    
+    <!-- Top Stat Row -->
+    <g transform="translate(20, 52)">
       <g>
         <text x="0" y="24" class="bento-num">10+</text>
-        <text x="0" y="46" class="bento-sub">Active Repositories</text>
+        <text x="0" y="44" class="bento-sub">Public Repositories</text>
       </g>
-      <g transform="translate(140, 0)">
+      <g transform="translate(132, 0)">
         <text x="0" y="24" class="bento-num">380+</text>
-        <text x="0" y="46" class="bento-sub">Contributions</text>
+        <text x="0" y="44" class="bento-sub">Git Contributions</text>
       </g>
     </g>
-  </g>
 
-  <!-- ================= TILE 2: CRAFT & HABITS ================= -->
-  <g transform="translate(18, 150)">
-    <rect width="280" height="122" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
-    <text x="18" y="26" class="bento-title">RHYTHM // HABITS</text>
-    <g transform="translate(18, 44)">
+    <!-- Divider Line -->
+    <line x1="20" y1="134" x2="260" y2="134" stroke="#5e4352" stroke-width="1" stroke-dasharray="4,4" opacity="0.6" />
+
+    <!-- Bottom Stat Row -->
+    <g transform="translate(20, 154)">
       <g>
-        <text x="0" y="24" class="bento-num">☕ 3.5</text>
-        <text x="0" y="46" class="bento-sub">Cups Espresso / Day</text>
+        <text x="0" y="24" class="bento-num">99%</text>
+        <text x="0" y="44" class="bento-sub">Commit Consistency</text>
       </g>
-      <g transform="translate(140, 0)">
-        <text x="0" y="24" class="bento-num">🌙 22-02</text>
-        <text x="0" y="46" class="bento-sub">Peak Code Velocity</text>
+      <g transform="translate(132, 0)">
+        <text x="0" y="24" class="bento-num">100%</text>
+        <text x="0" y="44" class="bento-sub">Open Source Focus</text>
       </g>
     </g>
   </g>
 
-  <!-- ================= TILE 3: LANGUAGE ARCHITECTURE ================= -->
+  <!-- ================= TILE 2: LANGUAGE ARCHITECTURE (Middle) ================= -->
   <g transform="translate(312, 18)">
     <rect width="320" height="254" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="20" y="28" class="bento-title">CORE LANGUAGE STACK</text>
@@ -118,15 +115,14 @@
     </g>
   </g>
 
-  <!-- ================= TILE 4: FLAGSHIP SPRINT ================= -->
+  <!-- ================= TILE 3: FLAGSHIP SPRINT (Right) ================= -->
   <g transform="translate(646, 18)">
     <rect width="236" height="254" rx="12" fill="url(#card-grad)" stroke="#5e4352" stroke-width="1.2" />
     <text x="18" y="28" class="bento-title">ACTIVE HORIZON</text>
 
-    <!-- Pulsing Radar with Safe Margins -->
+    <!-- Pulsing Radar with Calm 3.8s Ping -->
     <g transform="translate(18, 50)">
-      <circle cx="12" cy="10" r="4" class="radar-wave-1" fill="none" stroke="#ffb5a7" stroke-width="1.5" />
-      <circle cx="12" cy="10" r="4" class="radar-wave-2" fill="none" stroke="#fcd5ce" stroke-width="1.2" />
+      <circle cx="12" cy="10" r="4" class="radar-wave" fill="none" stroke="#ffb5a7" stroke-width="1.4" />
       <circle cx="12" cy="10" r="4" class="beacon-core" fill="#ffb5a7" />
       <text x="36" y="14" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', sans-serif" font-size="11" font-weight="900" letter-spacing="0.5">IN PRODUCTION</text>
     </g>

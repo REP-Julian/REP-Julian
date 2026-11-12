@@ -16,21 +16,41 @@
       <stop offset="100%" stop-color="#2b2129"/>
     </linearGradient>
     <style>
-      @keyframes softTwinkleA { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.95; } }
-      @keyframes softTwinkleB { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.25; } }
-      @keyframes steamRise {
-        0% { transform: translateY(0); opacity: 0.65; }
-        60% { opacity: 0.3; }
-        100% { transform: translateY(-14px); opacity: 0; }
+      /* Tranquil Ambient Twinkle (Slow, calm, organic) */
+      @keyframes calmGlowA { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.9; } }
+      @keyframes calmGlowB { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+      
+      /* Gentle Coffee Steam Drift */
+      @keyframes steamRiseA {
+        0% { transform: translateY(0); opacity: 0.2; }
+        45% { opacity: 0.75; }
+        100% { transform: translateY(-10px); opacity: 0; }
       }
-      @keyframes cursorStep { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-      @keyframes statusPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+      @keyframes steamRiseB {
+        0% { transform: translateY(0); opacity: 0.2; }
+        45% { opacity: 0.75; }
+        100% { transform: translateY(-10px); opacity: 0; }
+      }
 
-      .twinkle-a { animation: softTwinkleA 3.2s ease-in-out infinite; }
-      .twinkle-b { animation: softTwinkleB 4.2s ease-in-out infinite; }
-      .steam-float { animation: steamRise 3s ease-out infinite; }
-      .code-cursor { animation: cursorStep 1s step-end infinite; }
-      .beacon-dot { animation: statusPulse 2s ease-in-out infinite; }
+      /* Relaxed Terminal Cursor */
+      @keyframes cursorStep { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+      /* Subtle Status Beacon */
+      @keyframes beaconBreathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+
+      /* Peaceful Cat Nap Rhythm */
+      @keyframes catSleep {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(1.5px); }
+      }
+
+      .twinkle-a { animation: calmGlowA 5.5s ease-in-out infinite; }
+      .twinkle-b { animation: calmGlowB 6.5s ease-in-out infinite; }
+      .steam-1 { animation: steamRiseA 3.8s ease-out infinite; }
+      .steam-2 { animation: steamRiseB 3.8s ease-out 1.9s infinite; }
+      .code-cursor { animation: cursorStep 1.2s step-end infinite; }
+      .beacon-dot { animation: beaconBreathe 2.5s ease-in-out infinite; }
+      .cat-nap { animation: catSleep 4.5s ease-in-out infinite; }
     </style>
   </defs>
 
@@ -106,44 +126,49 @@
   </g>
 
   <!-- Foreground Desk Setup with Computer, Mug, Plant, and Cat -->
-  <g transform="translate(690 180)">
+  <g transform="translate(680 180)">
     <!-- Desk Surface -->
-    <path d="M0 146h430v14H0z" fill="#5e4352"/>
+    <path d="M0 146h450v14H0z" fill="#5e4352"/>
 
-    <!-- Potted Plant (Left desk) -->
-    <g transform="translate(15, 70)">
+    <!-- Potted Plant (Left desk: x=12 to 72) -->
+    <g transform="translate(12, 70)">
       <path d="M15 80c-5-25 5-40 20-54 1 15 14 19 12 36 12-8 15-19 14-32 19 18 24 34 14 50z" fill="#806074"/>
       <path d="M35 80c-4-16 4-25 10-34 7 10 11 17 7 34z" fill="#ffb5a7"/>
       <rect x="5" y="76" width="60" height="14" rx="4" fill="#5e4352"/>
     </g>
 
-    <!-- Monitor (Center desk) -->
-    <g transform="translate(100, 10)">
-      <rect width="200" height="126" rx="10" fill="#5e4352"/>
-      <rect x="8" y="8" width="184" height="110" rx="5" fill="url(#screen)"/>
+    <!-- Monitor (Center desk: x=90 to 270) -->
+    <g transform="translate(90, 10)">
+      <rect width="180" height="126" rx="10" fill="#5e4352"/>
+      <rect x="8" y="8" width="164" height="110" rx="5" fill="url(#screen)"/>
       <!-- Code lines -->
-      <path d="M24 30h52M24 46h84M24 62h62M24 78h96" stroke="#fcd5ce" stroke-width="4.5" stroke-linecap="round" opacity=".8"/>
-      <path d="M120 30h40M120 46h48M120 62h36" stroke="#ffb5a7" stroke-width="4.5" stroke-linecap="round"/>
-      <rect class="code-cursor" x="122" y="74" width="7" height="6" rx="1" fill="#ffb5a7"/>
+      <path d="M20 30h48M20 46h76M20 62h56M20 78h86" stroke="#fcd5ce" stroke-width="4.5" stroke-linecap="round" opacity=".8"/>
+      <path d="M108 30h36M108 46h42M108 62h32" stroke="#ffb5a7" stroke-width="4.5" stroke-linecap="round"/>
+      <rect class="code-cursor" x="110" y="74" width="7" height="6" rx="1" fill="#ffb5a7"/>
       <!-- Monitor Stand -->
-      <path d="M78 126h44l14 18h-72z" fill="#806074"/>
-      <path d="M28 144h144" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+      <path d="M68 126h44l14 18h-72z" fill="#806074"/>
+      <path d="M18 144h144" stroke="#fcd5ce" stroke-width="5" stroke-linecap="round" opacity=".8"/>
     </g>
 
-    <!-- Warm Coffee Cup & Steam (Right desk) -->
-    <g transform="translate(320, 105)">
-      <rect width="48" height="35" rx="6" fill="#ffb5a7"/>
-      <path d="M48 112h8a9 9 0 0 1 0 18h-8" fill="none" stroke="#ffb5a7" stroke-width="5"/>
-      <path class="steam-float" d="M16 0 Q10 -12 18 -24" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" />
-      <path class="steam-float" d="M30 0 Q36 -14 28 -26" fill="none" stroke="#fcd5ce" stroke-width="2.5" stroke-linecap="round" style="animation-delay: 1.5s;" />
+    <!-- Resting Sleeping Cat (Dedicated zone: x=285 to 345) -->
+    <g transform="translate(285, 114)">
+      <g class="cat-nap">
+        <path d="M0 16c2-15 11-24 24-25l10 11 10-11c14 2 24 11 26 25-7 14-18 20-35 20S7 30 0 16z" fill="#fcd5ce"/>
+        <path d="M4 8l2-22 19 13M54 0l19-13 2 22" fill="#ffb5a7"/>
+        <path d="M20 13h4M44 13h4M30 21l4 3 4-3" stroke="#2b2129" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M26 35v8M38 35v8" stroke="#fcd5ce" stroke-width="4" stroke-linecap="round"/>
+      </g>
     </g>
 
-    <!-- Resting Sleeping Cat (Safely placed in its own clear zone on the desk) -->
-    <g transform="translate(245, 114)">
-      <path d="M0 16c2-15 11-24 24-25l10 11 10-11c14 2 24 11 26 25-7 14-18 20-35 20S7 30 0 16z" fill="#fcd5ce"/>
-      <path d="M4 8l2-22 19 13M54 0l19-13 2 22" fill="#ffb5a7"/>
-      <path d="M20 13h4M44 13h4M30 21l4 3 4-3" stroke="#2b2129" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M26 35v8M38 35v8" stroke="#fcd5ce" stroke-width="4" stroke-linecap="round"/>
+    <!-- Warm Coffee Cup & Steam (Dedicated zone: x=365 to 415) -->
+    <g transform="translate(365, 115)">
+      <!-- Cup Body -->
+      <rect x="0" y="0" width="42" height="31" rx="5" fill="#ffb5a7"/>
+      <!-- Handle Attached Directly to Right Side of Cup Body -->
+      <path d="M42 6 h6 a6 6 0 0 1 0 16 h-6" fill="none" stroke="#ffb5a7" stroke-width="4" stroke-linecap="round"/>
+      <!-- Soft Ambient Steam Lines -->
+      <path class="steam-1" d="M12 -6 Q8 -16 14 -26" fill="none" stroke="#fcd5ce" stroke-width="2.2" stroke-linecap="round" />
+      <path class="steam-2" d="M26 -6 Q30 -18 24 -28" fill="none" stroke="#fcd5ce" stroke-width="2.2" stroke-linecap="round" />
     </g>
   </g>
 

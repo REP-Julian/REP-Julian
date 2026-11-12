@@ -131,10 +131,6 @@
 <h2 align="center">🌱 Contribution Garden</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/cozy-coding-desk.svg" width="95%" alt="Cozy coding desk scene" />
-</p>
-
-<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake.svg" />
