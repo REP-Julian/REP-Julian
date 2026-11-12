@@ -21,8 +21,8 @@ jobs:
         with:
           github_user_name: REP-Julian
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=%235e4352&color_dots=%23f8edeb,%23fcd5ce,%23ffb5a7,%235e4352,%232b2129
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23ffb5a7&color_dots=%232b2129,%235e4352,%23fcd5ce,%23ffb5a7,%23f8edeb
 
       - name: Publish contribution snake
         uses: crazy-max/ghaction-github-pages@v3.1.0
