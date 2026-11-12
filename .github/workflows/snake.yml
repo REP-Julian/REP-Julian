@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate contribution snake
+      - name: Generate Contribution Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: REP-Julian
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=%235e4352&color_dots=%23f8edeb,%23fcd5ce,%23ffb5a7,%235e4352,%232b2129
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23ffb5a7&color_dots=%232b2129,%235e4352,%23fcd5ce,%23ffb5a7,%23f8edeb
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23ffb5a7&color_dots=%232b2129,%235e4352,%238c6479,%23d69a94,%23ffb5a7
 
-      - name: Publish contribution snake
+      - name: Deploy to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
