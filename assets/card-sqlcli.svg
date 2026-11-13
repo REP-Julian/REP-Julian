@@ -1,47 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 145" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" width="100%" height="100%">
   <defs>
     <linearGradient id="card-p5" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2a2028" />
-      <stop offset="100%" stop-color="#1f181e" />
+      <stop offset="0%" stop-color="#241a23" />
+      <stop offset="100%" stop-color="#181118" />
     </linearGradient>
     <style>
-      @keyframes pulseE { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
-      .live-dot { animation: pulseE 1.9s ease-in-out infinite; }
+      @keyframes pulseDot5 { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .live-dot { animation: pulseDot5 2s ease-in-out infinite; }
     </style>
   </defs>
-  <rect width="440" height="145" rx="14" fill="url(#card-p5)" stroke="#5e4352" stroke-width="1.5" />
+
+  <!-- Card Shell with Specular Border -->
+  <rect width="500" height="180" rx="16" fill="url(#card-p5)" stroke="#735367" stroke-width="1.8" />
   
-  <!-- Icon & Header -->
-  <g transform="translate(18, 18)">
-    <rect width="36" height="36" rx="8" fill="#3a2a37" stroke="#5e4352" stroke-width="1" />
-    <text x="18" y="24" text-anchor="middle" font-size="18">⚡</text>
+  <!-- Header: Icon + Title + Status -->
+  <g transform="translate(20, 18)">
+    <rect width="44" height="44" rx="10" fill="#362534" stroke="#735367" stroke-width="1.2" />
+    <text x="22" y="29" text-anchor="middle" font-size="22">⚡</text>
     
-    <text x="48" y="17" fill="#f8edeb" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', 'Basis Grotesque', sans-serif" font-size="15" font-weight="900">sql-cli</text>
-    <!-- Pulsing dot + status -->
-    <circle class="live-dot" cx="52" cy="29" r="3.5" fill="#ffb5a7" />
-    <text x="60" y="32" fill="#ffb5a7" font-family="'basisGrotesqueArabicPro-Black', 'Basis Grotesque Arabic Pro Black', sans-serif" font-size="10" font-weight="900" letter-spacing="0.8">MYSQL TERMINAL // OLLAMA AI</text>
+    <!-- Title: Crisp Pure White for Maximum Readability -->
+    <text x="56" y="21" fill="#ffffff" font-family="'basisGrotesqueArabicPro-Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800">sql-cli</text>
+    
+    <!-- Status Badge -->
+    <circle class="live-dot" cx="60" cy="36" r="3.5" fill="#ffb5a7" />
+    <text x="70" y="39.5" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1">MYSQL TERMINAL // OLLAMA AI</text>
   </g>
 
-  <!-- Description -->
-  <text x="18" y="78" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" opacity="0.9">Beginner-friendly Python MySQL terminal for XAMPP environments.</text>
-  <text x="18" y="95" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" opacity="0.8">Features live schema autocomplete &amp; optional local Ollama SQL help.</text>
+  <!-- High-Contrast Body Text (No Opacity Dimming) -->
+  <text x="20" y="93" fill="#f8edeb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="500">Beginner-friendly Python MySQL terminal built for XAMPP.</text>
+  <text x="20" y="117" fill="#fcd5ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="500">Live schema autocomplete with local Ollama SQL AI copilot.</text>
 
-  <!-- Tags -->
-  <g transform="translate(18, 112)">
-    <rect width="60" height="20" rx="10" fill="#3a2a37" />
-    <text x="30" y="14" text-anchor="middle" fill="#ffb5a7" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Python</text>
+  <!-- Tags & Action Row -->
+  <g transform="translate(20, 136)">
+    <rect width="68" height="26" rx="13" fill="#362534" stroke="#5e4352" stroke-width="1" />
+    <text x="34" y="17.5" text-anchor="middle" fill="#ffb5a7" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="600">Python</text>
 
-    <g transform="translate(66, 0)">
-      <rect width="60" height="20" rx="10" fill="#3a2a37" />
-      <text x="30" y="14" text-anchor="middle" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">MySQL</text>
+    <g transform="translate(76, 0)">
+      <rect width="68" height="26" rx="13" fill="#362534" stroke="#5e4352" stroke-width="1" />
+      <text x="34" y="17.5" text-anchor="middle" fill="#fcd5ce" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="600">MySQL</text>
     </g>
 
-    <g transform="translate(132, 0)">
-      <rect width="80" height="20" rx="10" fill="#3a2a37" />
-      <text x="40" y="14" text-anchor="middle" fill="#f8edeb" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Ollama AI</text>
+    <g transform="translate(152, 0)">
+      <rect width="90" height="26" rx="13" fill="#362534" stroke="#5e4352" stroke-width="1" />
+      <text x="45" y="17.5" text-anchor="middle" fill="#f8edeb" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="600">Ollama AI</text>
     </g>
 
-    <!-- Arrow icon -->
-    <text x="404" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">View ↗</text>
+    <!-- Arrow CTA -->
+    <text x="460" y="17.5" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">View ↗</text>
   </g>
 </svg>
