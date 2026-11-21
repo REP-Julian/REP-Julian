@@ -39,7 +39,7 @@
   <text x="48" y="122" class="title" font-size="40" fill="#FFFFFF" filter="url(#sGlow)">22</text>
   <text x="48" y="144" class="mono" font-size="12" fill="#9BB0DF">Public Repositories</text>
 
-  <text x="218" y="122" class="title" font-size="40" fill="#00F0FF" filter="url(#sGlow)">408+</text>
+  <text x="218" y="122" class="title" font-size="40" fill="#00F0FF" filter="url(#sGlow)">411+</text>
   <text x="218" y="144" class="mono" font-size="12" fill="#9BB0DF">Git Contributions</text>
 
   <text x="48" y="220" class="title" font-size="38" fill="#FF00A8" filter="url(#sGlow)">99%</text>
@@ -54,9 +54,9 @@
   <text x="438" y="56" class="mono" font-size="12" font-weight="700" fill="#E8F7FF" letter-spacing="2">CORE LANGUAGE STACK</text>
   
             <text x="438" y="92" class="mono" font-size="13" font-weight="700" fill="#E8F7FF">JavaScript</text>
-            <text x="774" y="92" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#00F0FF">42%</text>
+            <text x="774" y="92" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#00F0FF">41%</text>
             <rect x="438" y="102" width="336" height="8" rx="4" fill="#172042"/>
-            <rect x="438" y="102" width="141" height="8" rx="4" fill="#00F0FF" filter="url(#sGlow)"
+            <rect x="438" y="102" width="137" height="8" rx="4" fill="#00F0FF" filter="url(#sGlow)"
                   style="transform-origin: 438px 106px; animation: growBar 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;"/>
             
             <text x="438" y="142" class="mono" font-size="13" font-weight="700" fill="#E8F7FF">CSS</text>
@@ -66,15 +66,15 @@
                   style="transform-origin: 438px 156px; animation: growBar 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;"/>
             
             <text x="438" y="192" class="mono" font-size="13" font-weight="700" fill="#E8F7FF">Python</text>
-            <text x="774" y="192" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#A855F7">15%</text>
+            <text x="774" y="192" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#A855F7">17%</text>
             <rect x="438" y="202" width="336" height="8" rx="4" fill="#172042"/>
-            <rect x="438" y="202" width="50" height="8" rx="4" fill="#A855F7" filter="url(#sGlow)"
+            <rect x="438" y="202" width="57" height="8" rx="4" fill="#A855F7" filter="url(#sGlow)"
                   style="transform-origin: 438px 206px; animation: growBar 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;"/>
             
             <text x="438" y="242" class="mono" font-size="13" font-weight="700" fill="#E8F7FF">Java</text>
-            <text x="774" y="242" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#00F5A0">9%</text>
+            <text x="774" y="242" text-anchor="end" class="mono" font-size="12.5" font-weight="700" fill="#00F5A0">8%</text>
             <rect x="438" y="252" width="336" height="8" rx="4" fill="#172042"/>
-            <rect x="438" y="252" width="30" height="8" rx="4" fill="#00F5A0" filter="url(#sGlow)"
+            <rect x="438" y="252" width="26" height="8" rx="4" fill="#00F5A0" filter="url(#sGlow)"
                   style="transform-origin: 438px 256px; animation: growBar 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;"/>
             
 
