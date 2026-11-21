@@ -32,7 +32,7 @@
       }
       @keyframes slideProg {
         0% { transform: translateX(0px); }
-        100% { transform: translateX(460px); }
+        100% { transform: translateX(298px); }
       }
     ]]></style>
   </defs>

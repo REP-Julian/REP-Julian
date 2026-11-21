@@ -145,18 +145,16 @@
 <h2 align="center">🌐 3D CONTRIBUTION MATRIX</h2>
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D Isometric Contribution Graph" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg?v=2" width="95%" alt="3D Isometric Contribution Graph" />
 </p>
 
-<details align="center">
-  <summary><b>⚡ EXPAND LIVE CONTRIBUTION SNAKE SIMULATION</b></summary>
-  <br />
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake.svg" />
     <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/output/github-contribution-grid-snake-dark.svg" width="95%" alt="Contribution Snake" />
   </picture>
-</details>
+</p>
 
 <p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 

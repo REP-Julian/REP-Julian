@@ -139,7 +139,7 @@ def build_hero_svg() -> None:
 
     <!-- 3D Perspective Cyber Floor Grid -->
     <g>
-      <line x1="0" y1="230" x2="1200" y2="230" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.5" filter="url(#glowCyan)"/>
+      <rect x="0" y="229" width="1200" height="2" fill="#00F0FF" fill-opacity="0.6" filter="url(#glowCyan)"/>
       {''.join(v_lines)}
       {''.join(h_lines)}
     </g>
@@ -410,7 +410,7 @@ def build_audio_hud_svg() -> None:
       }}
       @keyframes slideProg {{
         0% {{ transform: translateX(0px); }}
-        100% {{ transform: translateX(460px); }}
+        100% {{ transform: translateX(298px); }}
       }}
     ]]></style>
   </defs>
