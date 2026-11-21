@@ -85,17 +85,17 @@
     <!-- Python -->
     <g transform="translate(20, 50)">
       <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">JavaScript</text>
-      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">43%</text>
+      <text x="280" y="14" text-anchor="end" fill="#ffb5a7" font-family="'JetBrains Mono', monospace" font-size="12">42%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="120" height="7" rx="3.5" fill="url(#bar-ts)" />
+      <rect x="0" y="22" width="117" height="7" rx="3.5" fill="url(#bar-ts)" />
     </g>
 
     <!-- JavaScript -->
     <g transform="translate(20, 98)">
       <text x="0" y="14" fill="#f8edeb" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">CSS</text>
-      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">20%</text>
+      <text x="280" y="14" text-anchor="end" fill="#fcd5ce" font-family="'JetBrains Mono', monospace" font-size="12">19%</text>
       <rect x="0" y="22" width="280" height="7" rx="3.5" fill="#382935" />
-      <rect x="0" y="22" width="56" height="7" rx="3.5" fill="url(#bar-js)" />
+      <rect x="0" y="22" width="53" height="7" rx="3.5" fill="url(#bar-js)" />
     </g>
 
     <!-- Playwright & Automation -->
