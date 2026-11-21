@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%">
+  <defs>
+    <radialGradient id="bgSpace" cx="72%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#17123A"/>
+      <stop offset="50%" stop-color="#0A0E24"/>
+      <stop offset="100%" stop-color="#050714"/>
+    </radialGradient>
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#7B2CBF"/>
+      <stop offset="100%" stop-color="#FF00A8"/>
+    </linearGradient>
+    <linearGradient id="holoTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF00A8"/>
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7B2CBF" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B2CBF" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0B1026" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF00A8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#220D3A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="heroClip">
+      <rect x="6" y="6" width="1188" height="368" rx="18"/>
+    </clipPath>
+    <style><![CDATA[
+      .title-font { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 900; letter-spacing: 2px; }
+      .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace; }
+      .float-cube { animation: float3d 4.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; }
+      .float-shadow { animation: shadowPulse 4.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; transform-origin: 940px 292px; }
+      .ring-cw { animation: spinCW 18s linear infinite; transform-origin: 940px 185px; }
+      .ring-ccw { animation: spinCCW 12s linear infinite; transform-origin: 940px 185px; }
+      .pulse-dot { animation: pulseOrb 1.8s ease-in-out infinite; }
+      .scanline { animation: scanSweep 5.5s linear infinite; }
+      .flow-circuit { stroke-dasharray: 12 10; animation: dashFlow 2.4s linear infinite; }
+      .sheen-text { animation: chromaShift 4s ease-in-out infinite; }
+
+      @keyframes float3d {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-16px); }
+      }
+      @keyframes shadowPulse {
+        0%, 100% { transform: scale(1); opacity: 0.55; }
+        50% { transform: scale(0.76); opacity: 0.25; }
+      }
+      @keyframes spinCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes pulseOrb {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes scanSweep {
+        0% { transform: translateY(-40px); }
+        100% { transform: translateY(420px); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -44; }
+      }
+      @keyframes chromaShift {
+        0%, 100% { transform: translateX(0px); }
+        50% { transform: translateX(2.5px); }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Outer 3D Extruded Depth Plates -->
+  <rect x="10" y="10" width="1186" height="366" rx="18" fill="none" stroke="#FF00A8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="6" y="6" width="1188" height="368" rx="18" fill="url(#bgSpace)" stroke="url(#neonBorder)" stroke-width="2"/>
+
+  <g clip-path="url(#heroClip)">
+    <!-- Ambient 3D Radial Glow Orbs -->
+    <circle cx="940" cy="180" r="190" fill="#7B2CBF" fill-opacity="0.18" filter="url(#glowStrong)"/>
+    <circle cx="240" cy="110" r="150" fill="#00F0FF" fill-opacity="0.09" filter="url(#glowStrong)"/>
+
+    <!-- 3D Perspective Cyber Floor Grid -->
+    <g>
+      <line x1="0" y1="230" x2="1200" y2="230" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.5" filter="url(#glowCyan)"/>
+      <line x1="320" y1="230" x2="-550" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="348" y1="230" x2="-435" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="376" y1="230" x2="-320" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="404" y1="230" x2="-205" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="432" y1="230" x2="-90" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="460" y1="230" x2="25" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="488" y1="230" x2="140" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="516" y1="230" x2="255" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="544" y1="230" x2="370" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="572" y1="230" x2="485" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="600" y1="230" x2="600" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="628" y1="230" x2="715" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="656" y1="230" x2="830" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="684" y1="230" x2="945" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="712" y1="230" x2="1060" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="740" y1="230" x2="1175" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="768" y1="230" x2="1290" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="796" y1="230" x2="1405" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="824" y1="230" x2="1520" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="852" y1="230" x2="1635" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/><line x1="880" y1="230" x2="1750" y2="380" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="238" x2="1200" y2="238" stroke="#FF00A8" stroke-opacity="0.14" stroke-width="1"/><line x1="0" y1="250" x2="1200" y2="250" stroke="#FF00A8" stroke-opacity="0.19" stroke-width="1"/><line x1="0" y1="266" x2="1200" y2="266" stroke="#FF00A8" stroke-opacity="0.24" stroke-width="1"/><line x1="0" y1="286" x2="1200" y2="286" stroke="#FF00A8" stroke-opacity="0.29" stroke-width="1"/><line x1="0" y1="312" x2="1200" y2="312" stroke="#FF00A8" stroke-opacity="0.34" stroke-width="1"/><line x1="0" y1="344" x2="1200" y2="344" stroke="#FF00A8" stroke-opacity="0.39" stroke-width="1"/><line x1="0" y1="378" x2="1200" y2="378" stroke="#FF00A8" stroke-opacity="0.44" stroke-width="1"/>
+    </g>
+
+    <!-- Animated Circuit Accent Trace -->
+    <path d="M 48 64 L 180 64 L 200 84 L 460 84" fill="none" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.5" class="flow-circuit"/>
+    <path d="M 48 326 L 260 326 L 284 304 L 540 304" fill="none" stroke="#FF00A8" stroke-opacity="0.4" stroke-width="1.5" class="flow-circuit"/>
+
+    <!-- Corner HUD Brackets -->
+    <path d="M 24 46 L 24 24 L 46 24" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+    <path d="M 1154 24 L 1176 24 L 1176 46" fill="none" stroke="#FF00A8" stroke-width="2.5"/>
+    <path d="M 24 334 L 24 356 L 46 356" fill="none" stroke="#FF00A8" stroke-width="2.5"/>
+    <path d="M 1154 356 L 1176 356 L 1176 334" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+
+    <!-- LEFT HUD TYPOGRAPHY -->
+    <text x="56" y="54" class="mono" font-size="12" fill="#00F0FF" letter-spacing="3">REP-JULIAN // NEURAL DECK v5.0</text>
+
+    <!-- 3D Chromatic Extruded Title Layers -->
+    <text x="58" y="156" class="title-font sheen-text" font-size="54" fill="#FF00A8" fill-opacity="0.55">Hello, I'm Julian</text>
+    <text x="54" y="152" class="title-font" font-size="54" fill="#00F0FF" fill-opacity="0.45">Hello, I'm Julian</text>
+    <text x="56" y="154" class="title-font" font-size="54" fill="url(#holoTitle)" filter="url(#glowCyan)">Hello, I'm Julian</text>
+
+    <text x="58" y="194" class="mono" font-size="16" font-weight="700" fill="#E8F7FF">AI Automation Architect · Full-Stack Builder · QCU</text>
+    <text x="58" y="220" class="mono" font-size="13.5" fill="#9BB0DF">Engineering autonomous tools, real-time browser overlays &amp; futuristic UX.</text>
+
+    <!-- Pulsing Holographic Status Pill -->
+    <g transform="translate(56, 246)">
+      <rect x="3" y="3" width="276" height="36" rx="18" fill="#FF00A8" fill-opacity="0.22"/>
+      <rect x="0" y="0" width="276" height="36" rx="18" fill="#0B1026" stroke="#00F0FF" stroke-width="1.4"/>
+      <circle cx="22" cy="18" r="5" fill="#00F0FF" filter="url(#glowCyan)" class="pulse-dot"/>
+      <text x="38" y="22.5" class="mono" font-size="12" font-weight="700" fill="#E8F7FF" letter-spacing="1.5">SHIPPING AT NIGHT // LIVE</text>
+    </g>
+
+    <!-- Bottom Coordinates -->
+    <text x="56" y="346" class="mono" font-size="11" fill="#7A8BB8" letter-spacing="2">COFFEE · CURIOSITY · AUTONOMOUS CODE</text>
+    <text x="560" y="346" class="mono" font-size="11" fill="#00F0FF" fill-opacity="0.7" letter-spacing="1.5">LAT 14.6760° N · LON 121.0437° E</text>
+
+    <!-- RIGHT 3D HOLOGRAPHIC CORE & ORBITING RINGS -->
+    <!-- Ground Hologram Shadow -->
+    <ellipse cx="940" cy="292" rx="82" ry="18" fill="#00F0FF" fill-opacity="0.25" filter="url(#glowStrong)" class="float-shadow"/>
+
+    <!-- Counter-Rotating HUD Rings -->
+    <g class="ring-cw">
+      <circle cx="940" cy="185" r="118" fill="none" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="18 10 4 10"/>
+      <circle cx="940" cy="67" r="4" fill="#00F0FF" filter="url(#glowCyan)"/>
+      <circle cx="1058" cy="185" r="3.5" fill="#FF00A8" filter="url(#glowCyan)"/>
+    </g>
+    <g class="ring-ccw">
+      <circle cx="940" cy="185" r="94" fill="none" stroke="#FF00A8" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="32 14"/>
+      <circle cx="940" cy="279" r="3.5" fill="#00F0FF" filter="url(#glowCyan)"/>
+    </g>
+
+    <!-- Floating 3D Isometric Hypercube -->
+    <g class="float-cube" filter="url(#glowCyan)">
+      <!-- Outer Isometric Cube -->
+      <polygon points="940,108 1006,146 940,184 874,146" fill="url(#cubeTop)" stroke="#00F0FF" stroke-width="1.8"/>
+      <polygon points="874,146 940,184 940,256 874,218" fill="url(#cubeLeft)" stroke="#00F0FF" stroke-width="1.5"/>
+      <polygon points="1006,146 940,184 940,256 1006,218" fill="url(#cubeRight)" stroke="#FF00A8" stroke-width="1.5"/>
+      <!-- Inner Floating Core Prism -->
+      <polygon points="940,148 972,166 940,184 908,166" fill="#FFFFFF" fill-opacity="0.85"/>
+      <polygon points="908,166 940,184 940,218 908,200" fill="#00F0FF" fill-opacity="0.65"/>
+      <polygon points="972,166 940,184 940,218 972,200" fill="#FF00A8" fill-opacity="0.7"/>
+      <!-- Wireframe Vertices -->
+      <line x1="940" y1="108" x2="940" y2="148" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1"/>
+      <line x1="874" y1="218" x2="908" y2="200" stroke="#00F0FF" stroke-opacity="0.6" stroke-width="1"/>
+      <line x1="1006" y1="218" x2="972" y2="200" stroke="#FF00A8" stroke-opacity="0.6" stroke-width="1"/>
+    </g>
+
+    <!-- Sweeping Holographic Laser Scanline -->
+    <rect x="0" y="0" width="1200" height="36" fill="url(#scanGrad)" class="scanline"/>
+  </g>
+</svg>

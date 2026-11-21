@@ -3,11 +3,13 @@
 Autonomous Profile Telemetry & Repository Synchronizer
 Author: Julian Agustino (@REP-Julian)
 Runs on GitHub Actions schedule + repository events.
+Supports both legacy v4 SVGs and Cyber-Sovereign 3D v5 SVGs.
 """
 
 import os
 import re
 import json
+import html
 import urllib.request
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Tuple
@@ -105,11 +107,10 @@ def compute_metrics() -> Dict[str, Any]:
     graphql = fetch_graphql_data()
     
     if graphql:
-        contributions = graphql.get("contributionsCollection", {}).get("contributionCalendar", {}).get("totalContributions", 380)
+        contributions = graphql.get("contributionsCollection", {}).get("contributionCalendar", {}).get("totalContributions", 405)
         repo_nodes = graphql.get("repositories", {}).get("nodes", [])
         total_repos = graphql.get("repositories", {}).get("totalCount", len(repo_nodes))
         
-        # Calculate language byte sizes
         lang_sizes: Dict[str, int] = {}
         all_repos = []
         for r in repo_nodes:
@@ -127,8 +128,8 @@ def compute_metrics() -> Dict[str, Any]:
                 break
     else:
         total_repos, repos = fetch_rest_fallback()
-        contributions = 380
-        lang_sizes = {"Python": 50, "JavaScript": 30, "TypeScript": 12, "Other": 8}
+        contributions = 405
+        lang_sizes = {"JavaScript": 42, "CSS": 20, "Python": 15, "Local AI & Cloud APIs": 8}
         all_repos = repos
         active_repo = None
         for r in repos:
@@ -145,9 +146,8 @@ def compute_metrics() -> Dict[str, Any]:
             pct = round((size / total_bytes) * 100)
             top_langs.append((name, pct))
     else:
-        top_langs = [("Python", 50), ("JavaScript", 30), ("TypeScript", 12), ("Other", 8)]
+        top_langs = [("JavaScript", 42), ("CSS", 20), ("Python", 15), ("Local AI & Cloud APIs", 8)]
 
-    # Format 5 recent repos (excluding the profile repo itself)
     recent_repos = []
     for r in all_repos:
         name = r.get("name", "")
@@ -187,7 +187,7 @@ def compute_metrics() -> Dict[str, Any]:
     }
 
 
-def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
+def update_stats_bento_legacy(metrics: Dict[str, Any], file_path: str) -> bool:
     if not os.path.exists(file_path):
         return False
     
@@ -196,7 +196,6 @@ def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
 
     orig_content = content
 
-    # 1. Update public repositories number
     repos_str = f"{metrics['repos']}" if metrics['repos'] >= 20 else f"{metrics['repos']}+"
     content = re.sub(
         r'(<text x="0" y="24" class="bento-num">)[^<]+(</text>\s*<text x="0" y="44" class="bento-sub">Public Repositories</text>)',
@@ -204,7 +203,6 @@ def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
         content,
     )
 
-    # 2. Update contributions number
     contrib_str = f"{metrics['contributions']}+"
     content = re.sub(
         r'(<text x="0" y="24" class="bento-num">)[^<]+(</text>\s*<text x="0" y="44" class="bento-sub">Git Contributions</text>)',
@@ -212,7 +210,6 @@ def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
         content,
     )
 
-    # 3. Update top languages
     top_langs = metrics["top_langs"]
     if len(top_langs) >= 3:
         l1_name, l1_pct = top_langs[0]
@@ -239,7 +236,6 @@ def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
             content,
         )
 
-    # 4. Update Active Horizon
     active_name = metrics["active_repo_name"]
     display_name = active_name if len(active_name) <= 18 else active_name[:17] + "…"
     content = re.sub(
@@ -256,7 +252,7 @@ def update_stats_bento(metrics: Dict[str, Any], file_path: str) -> bool:
     return False
 
 
-def update_terminal_card(metrics: Dict[str, Any], file_path: str) -> bool:
+def update_terminal_card_legacy(metrics: Dict[str, Any], file_path: str) -> bool:
     if not os.path.exists(file_path):
         return False
 
@@ -281,19 +277,99 @@ def update_terminal_card(metrics: Dict[str, Any], file_path: str) -> bool:
     return False
 
 
+def update_stats_bento_3d(metrics: Dict[str, Any], file_path: str) -> bool:
+    if not os.path.exists(file_path):
+        return False
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    orig_content = content
+
+    repos_str = f"{metrics['repos']}"
+    content = re.sub(
+        r'(<text x="48" y="122" class="title"[^>]*>)[^<]+(</text>\s*<text x="48" y="144" class="mono"[^>]*>Public Repositories</text>)',
+        rf'\g<1>{repos_str}\g<2>',
+        content,
+    )
+
+    contrib_str = f"{metrics['contributions']}+"
+    content = re.sub(
+        r'(<text x="218" y="122" class="title"[^>]*>)[^<]+(</text>\s*<text x="218" y="144" class="mono"[^>]*>Git Contributions</text>)',
+        rf'\g<1>{contrib_str}\g<2>',
+        content,
+    )
+
+    top_langs = metrics["top_langs"]
+    colors = ["#00F0FF", "#FF00A8", "#A855F7", "#00F5A0"]
+    y_coords = [92, 142, 192, 242]
+    for idx, (y, col) in enumerate(zip(y_coords, colors)):
+        if idx < len(top_langs):
+            lname, lpct = top_langs[idx]
+            lw = int(336 * (lpct / 100))
+            content = re.sub(
+                rf'(<text x="438" y="{y}" class="mono"[^>]*>)[^<]+(</text>\s*<text x="774" y="{y}"[^>]*>)[^<]+(</text>\s*<rect x="438" y="{y+10}" width="336"[^>]*/>\s*<rect x="438" y="{y+10}" width=")[^"]+(")',
+                rf'\g<1>{html.escape(lname)}\g<2>{lpct}%\g<3>{lw}\g<4>',
+                content,
+            )
+
+    active_name = metrics["active_repo_name"]
+    display_name = active_name if len(active_name) <= 22 else active_name[:21] + "…"
+    content = re.sub(
+        r'(<rect x="840" y="114" width="302"[^>]*>\s*<text x="858" y="142" class="title"[^>]*>)[^<]+(</text>)',
+        rf'\g<1>{html.escape(display_name)}\g<2>',
+        content,
+    )
+
+    if content != orig_content:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"Updated {file_path}")
+        return True
+    return False
+
+
+def update_terminal_card_3d(metrics: Dict[str, Any], file_path: str) -> bool:
+    if not os.path.exists(file_path):
+        return False
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    orig_content = content
+    active_name = metrics["active_repo_name"]
+    shipping_str = f'"{active_name} 🚀"'
+
+    content = re.sub(
+        r'(<tspan class="p">shippingNow</tspan><tspan class="m">:</tspan>\s*<tspan class="s">")[^"]+("\s*</tspan>)',
+        rf'\g<1>{shipping_str}\g<2>',
+        content,
+    )
+
+    if content != orig_content:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"Updated {file_path}")
+        return True
+    return False
+
+
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] Syncing profile telemetry for @{GITHUB_USER}...")
     metrics = compute_metrics()
     print("Metrics snapshot:", json.dumps({k: v for k, v in metrics.items() if k != "recent_repos"}, indent=2))
     
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    bento_path = os.path.join(base_dir, "assets", "stats-bento.svg")
-    terminal_path = os.path.join(base_dir, "assets", "terminal-card.svg")
     
-    c1 = update_stats_bento(metrics, bento_path)
-    c2 = update_terminal_card(metrics, terminal_path)
+    # Update legacy v4 if present
+    c1 = update_stats_bento_legacy(metrics, os.path.join(base_dir, "assets", "stats-bento.svg"))
+    c2 = update_terminal_card_legacy(metrics, os.path.join(base_dir, "assets", "terminal-card.svg"))
     
-    changed = c1 or c2
+    # Update Cyber-Sovereign 3D v5
+    c3 = update_stats_bento_3d(metrics, os.path.join(base_dir, "assets", "stats-bento-3d.svg"))
+    c4 = update_terminal_card_3d(metrics, os.path.join(base_dir, "assets", "terminal-card-3d.svg"))
+    
+    changed = c1 or c2 or c3 or c4
     print(f"Sync complete. Telemetry files modified: {changed}")
 
 

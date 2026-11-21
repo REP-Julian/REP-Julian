@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%">
+  <defs>
+    <linearGradient id="cBg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1535"/>
+      <stop offset="100%" stop-color="#050714"/>
+    </linearGradient>
+    <linearGradient id="cBorder5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FF00A8"/>
+    </linearGradient>
+    <linearGradient id="cSheen5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cGlow5" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cClip5">
+      <rect x="6" y="6" width="560" height="210" rx="14"/>
+    </clipPath>
+    <style><![CDATA[
+      .title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 800; }
+      .mono { font-family: 'Fira Code', ui-monospace, monospace; }
+      .sheen { animation: cardSweep 5.8s ease-in-out 4.0s infinite; }
+      .node-pulse { animation: nPulse 2.2s ease-in-out 4.0s infinite; }
+      .arrow-move { animation: arrowNudge 2s ease-in-out infinite; }
+      @keyframes cardSweep {
+        0%, 62% { transform: translateX(-260px) skewX(-22deg); }
+        100% { transform: translateX(740px) skewX(-22deg); }
+      }
+      @keyframes nPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      @keyframes arrowNudge {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(3px, -2px); }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- 3D Isometric Extruded Depth Layers -->
+  <rect x="14" y="14" width="560" height="210" rx="14" fill="#FF00A8" fill-opacity="0.15" stroke="#FF00A8" stroke-opacity="0.4"/>
+  <rect x="10" y="10" width="560" height="210" rx="14" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.35"/>
+
+  <!-- Main Glassmorphic Plate -->
+  <rect x="6" y="6" width="560" height="210" rx="14" fill="url(#cBg5)" stroke="url(#cBorder5)" stroke-width="1.6"/>
+
+  <g clip-path="url(#cClip5)">
+    <!-- Top Accent Glow Bar -->
+    <rect x="28" y="6" width="120" height="3" fill="#38BDF8" filter="url(#cGlow5)"/>
+
+    <!-- Isometric Mini-Cube Icon -->
+    <g transform="translate(28, 28)" filter="url(#cGlow5)">
+      <polygon points="16,0 32,9 16,18 0,9" fill="#38BDF8" fill-opacity="0.8"/>
+      <polygon points="0,9 16,18 16,35 0,26" fill="#FF00A8" fill-opacity="0.6"/>
+      <polygon points="32,9 16,18 16,35 32,26" fill="#38BDF8" fill-opacity="0.35"/>
+    </g>
+
+    <!-- Title & Category -->
+    <text x="74" y="42" class="title" font-size="18.5" fill="#FFFFFF">StepUp-X-Google-Fit</text>
+    <circle cx="78" cy="59" r="3.2" fill="#38BDF8" filter="url(#cGlow5)" class="node-pulse"/>
+    <text x="89" y="63" class="mono" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="1.4">FITNESS CLOUD // CADENCE</text>
+
+    <!-- Description -->
+    <text x="28" y="106" class="mono" font-size="12.5" fill="#CBD7F6">Cloud step synchronizer &amp; natural walking cadence injector.</text>
+    <text x="28" y="128" class="mono" font-size="12.5" fill="#9BB0DF">Gaussian human pacing with zero-lag sync for Google Fit &amp; StepUp.</text>
+
+    <!-- Subtle Circuit Separator -->
+    <line x1="28" y1="156" x2="544" y2="156" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="1"/>
+
+    <!-- Tech Pills -->
+    <rect x="28" y="176" width="72" height="24" rx="6" fill="#050714" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/><text x="64.2" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">Python</text><rect x="110.4" y="176" width="106" height="24" rx="6" fill="#050714" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/><text x="163.4" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">Google Fit</text><rect x="226.4" y="176" width="106" height="24" rx="6" fill="#050714" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1"/><text x="279.4" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">Cloud Sync</text>
+
+    <!-- Animated Launch Indicator -->
+    <g class="arrow-move">
+      <text x="540" y="193" text-anchor="end" class="mono" font-size="12" font-weight="700" fill="#38BDF8">LAUNCH ↗</text>
+    </g>
+
+    <!-- Holographic Sheen Transition -->
+    <rect x="0" y="0" width="180" height="230" fill="url(#cSheen5)" class="sheen"/>
+  </g>
+</svg>

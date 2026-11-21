@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%">
+  <defs>
+    <linearGradient id="cBg0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1535"/>
+      <stop offset="100%" stop-color="#050714"/>
+    </linearGradient>
+    <linearGradient id="cBorder0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#7B2CBF"/>
+    </linearGradient>
+    <linearGradient id="cSheen0" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cGlow0" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cClip0">
+      <rect x="6" y="6" width="560" height="210" rx="14"/>
+    </clipPath>
+    <style><![CDATA[
+      .title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 800; }
+      .mono { font-family: 'Fira Code', ui-monospace, monospace; }
+      .sheen { animation: cardSweep 5.8s ease-in-out 0s infinite; }
+      .node-pulse { animation: nPulse 2.2s ease-in-out 0s infinite; }
+      .arrow-move { animation: arrowNudge 2s ease-in-out infinite; }
+      @keyframes cardSweep {
+        0%, 62% { transform: translateX(-260px) skewX(-22deg); }
+        100% { transform: translateX(740px) skewX(-22deg); }
+      }
+      @keyframes nPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      @keyframes arrowNudge {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(3px, -2px); }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- 3D Isometric Extruded Depth Layers -->
+  <rect x="14" y="14" width="560" height="210" rx="14" fill="#7B2CBF" fill-opacity="0.15" stroke="#7B2CBF" stroke-opacity="0.4"/>
+  <rect x="10" y="10" width="560" height="210" rx="14" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-opacity="0.35"/>
+
+  <!-- Main Glassmorphic Plate -->
+  <rect x="6" y="6" width="560" height="210" rx="14" fill="url(#cBg0)" stroke="url(#cBorder0)" stroke-width="1.6"/>
+
+  <g clip-path="url(#cClip0)">
+    <!-- Top Accent Glow Bar -->
+    <rect x="28" y="6" width="120" height="3" fill="#00F0FF" filter="url(#cGlow0)"/>
+
+    <!-- Isometric Mini-Cube Icon -->
+    <g transform="translate(28, 28)" filter="url(#cGlow0)">
+      <polygon points="16,0 32,9 16,18 0,9" fill="#00F0FF" fill-opacity="0.8"/>
+      <polygon points="0,9 16,18 16,35 0,26" fill="#7B2CBF" fill-opacity="0.6"/>
+      <polygon points="32,9 16,18 16,35 32,26" fill="#00F0FF" fill-opacity="0.35"/>
+    </g>
+
+    <!-- Title & Category -->
+    <text x="74" y="42" class="title" font-size="18.5" fill="#FFFFFF">Google-Forms-Universal-AI-Assistant</text>
+    <circle cx="78" cy="59" r="3.2" fill="#00F0FF" filter="url(#cGlow0)" class="node-pulse"/>
+    <text x="89" y="63" class="mono" font-size="10.5" font-weight="700" fill="#00F0FF" letter-spacing="1.4">AI OVERLAY // AUTOMATION</text>
+
+    <!-- Description -->
+    <text x="28" y="106" class="mono" font-size="12.5" fill="#CBD7F6">Real-time AI browser overlay &amp; auto-fill engine for Google Forms.</text>
+    <text x="28" y="128" class="mono" font-size="12.5" fill="#9BB0DF">Parses questions live, links custom LLMs &amp; suggests smart answers.</text>
+
+    <!-- Subtle Circuit Separator -->
+    <line x1="28" y1="156" x2="544" y2="156" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1"/>
+
+    <!-- Tech Pills -->
+    <rect x="28" y="176" width="106" height="24" rx="6" fill="#050714" stroke="#00F0FF" stroke-opacity="0.55" stroke-width="1"/><text x="81.0" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">JavaScript</text><rect x="144.0" y="176" width="106" height="24" rx="6" fill="#050714" stroke="#00F0FF" stroke-opacity="0.55" stroke-width="1"/><text x="197.0" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">AI Overlay</text><rect x="260.0" y="176" width="98" height="24" rx="6" fill="#050714" stroke="#00F0FF" stroke-opacity="0.55" stroke-width="1"/><text x="308.8" y="192" text-anchor="middle" class="mono" font-size="11" fill="#E8F7FF">Auto-Fill</text>
+
+    <!-- Animated Launch Indicator -->
+    <g class="arrow-move">
+      <text x="540" y="193" text-anchor="end" class="mono" font-size="12" font-weight="700" fill="#00F0FF">LAUNCH ↗</text>
+    </g>
+
+    <!-- Holographic Sheen Transition -->
+    <rect x="0" y="0" width="180" height="230" fill="url(#cSheen0)" class="sheen"/>
+  </g>
+</svg>

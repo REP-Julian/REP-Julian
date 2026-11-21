@@ -10,6 +10,8 @@ on:
     paths-ignore:
       - "assets/stats-bento.svg"
       - "assets/terminal-card.svg"
+      - "assets/stats-bento-3d.svg"
+      - "assets/terminal-card-3d.svg"
 
 permissions:
   contents: write
@@ -39,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-bento.svg assets/terminal-card.svg
+          git add assets/stats-bento.svg assets/terminal-card.svg assets/stats-bento-3d.svg assets/terminal-card-3d.svg
           if ! git diff --staged --quiet; then
             git commit -m "chore(telemetry): auto-update contributions & repo telemetry [skip ci]"
             git push origin main

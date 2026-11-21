@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1430"/>
+      <stop offset="100%" stop-color="#050714"/>
+    </linearGradient>
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="55%" stop-color="#7B2CBF"/>
+      <stop offset="100%" stop-color="#FF00A8"/>
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="tGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="termClip">
+      <rect x="8" y="8" width="736" height="336" rx="14"/>
+    </clipPath>
+    <style><![CDATA[
+      .code { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace; font-size: 13.5px; }
+      .k { fill: #FF00A8; font-weight: 700; }
+      .v { fill: #E8F7FF; }
+      .p { fill: #00F0FF; }
+      .s { fill: #A7F3D0; }
+      .m { fill: #7A8BB8; }
+      .cursor { animation: blink 1s step-end infinite; }
+      .sheen { animation: sweepX 6.5s ease-in-out infinite; }
+      .line1 { animation: bootIn 0.8s ease-out both; }
+      .line2 { animation: bootIn 1.1s ease-out both; }
+      .line3 { animation: bootIn 1.4s ease-out both; }
+      .line4 { animation: bootIn 1.7s ease-out both; }
+      .line5 { animation: bootIn 2.0s ease-out both; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes sweepX {
+        0%, 60% { transform: translateX(-420px) skewX(-20deg); }
+        100% { transform: translateX(920px) skewX(-20deg); }
+      }
+      @keyframes bootIn {
+        0% { opacity: 0.15; transform: translateX(-6px); }
+        100% { opacity: 1; transform: translateX(0px); }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- 3D Extruded Depth Plates -->
+  <rect x="16" y="16" width="736" height="336" rx="14" fill="#FF00A8" fill-opacity="0.16" stroke="#FF00A8" stroke-opacity="0.45" stroke-width="1"/>
+  <rect x="12" y="12" width="736" height="336" rx="14" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1"/>
+
+  <!-- Primary Glassmorphic Terminal Frame -->
+  <rect x="8" y="8" width="736" height="336" rx="14" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.8"/>
+
+  <g clip-path="url(#termClip)">
+    <!-- Top Header Bar -->
+    <rect x="8" y="8" width="736" height="42" fill="#10183A" fill-opacity="0.9"/>
+    <line x1="8" y1="50" x2="744" y2="50" stroke="#00F0FF" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="32" cy="29" r="5.5" fill="#FF00A8" filter="url(#tGlow)"/>
+    <circle cx="52" cy="29" r="5.5" fill="#7B2CBF"/>
+    <circle cx="72" cy="29" r="5.5" fill="#00F0FF" filter="url(#tGlow)"/>
+    <rect x="278" y="18" width="196" height="22" rx="6" fill="#050714" stroke="#00F0FF" stroke-opacity="0.4"/>
+    <text x="376" y="33" text-anchor="middle" class="code" font-size="11.5" fill="#00F0FF">julian.config.ts // 3D</text>
+
+    <!-- Code Body -->
+    <g transform="translate(32, 82)">
+      <text y="0" class="code line1"><tspan class="k">export const</tspan> <tspan class="p">engineer</tspan> <tspan class="v">=</tspan> <tspan class="m">{</tspan></text>
+      <text x="20" y="28" class="code line1"><tspan class="p">name</tspan><tspan class="m">:</tspan> <tspan class="s">"Julian Agustino"</tspan><tspan class="m">,</tspan></text>
+      <text x="20" y="54" class="code line2"><tspan class="p">handle</tspan><tspan class="m">:</tspan> <tspan class="s">"@REP-Julian"</tspan><tspan class="m">,</tspan></text>
+      <text x="20" y="80" class="code line2"><tspan class="p">focus</tspan><tspan class="m">:</tspan> <tspan class="s">"AI Automation, Userscripts &amp; Tooling"</tspan><tspan class="m">,</tspan></text>
+      <text x="20" y="106" class="code line3"><tspan class="p">coreStack</tspan><tspan class="m">:</tspan> <tspan class="m">[</tspan><tspan class="s">"Python"</tspan><tspan class="m">, </tspan><tspan class="s">"JavaScript"</tspan><tspan class="m">, </tspan><tspan class="s">"Playwright"</tspan><tspan class="m">, </tspan><tspan class="s">"Ollama"</tspan><tspan class="m">],</tspan></text>
+      <text x="20" y="132" class="code line3"><tspan class="p">shippingNow</tspan><tspan class="m">:</tspan> <tspan class="s">""budget-tracker 🚀""</tspan><tspan class="m">,</tspan></text>
+      <text x="20" y="158" class="code line4"><tspan class="p">fuel</tspan><tspan class="m">:</tspan> <tspan class="s">"Dark Roast + 24/7 Neural Lo-Fi"</tspan><tspan class="m">,</tspan></text>
+      <text x="20" y="184" class="code line4"><tspan class="p">philosophy</tspan><tspan class="m">:</tspan> <tspan class="s">"Useful first. Intuitive always."</tspan></text>
+      <text y="210" class="code line5"><tspan class="m">};</tspan></text>
+
+      <!-- Live Command Prompt -->
+      <text y="244" class="code line5">
+        <tspan fill="#FF00A8" font-weight="700">julian@neural</tspan><tspan class="m">:</tspan><tspan class="p">~</tspan><tspan class="v">$ pnpm run make-magic</tspan>
+      </text>
+      <rect x="332" y="230" width="9" height="17" fill="#00F0FF" filter="url(#tGlow)" class="cursor"/>
+    </g>
+
+    <!-- Diagonal Glass Sheen Transition -->
+    <rect x="0" y="0" width="220" height="360" fill="url(#glassSheen)" class="sheen"/>
+  </g>
+</svg>
