@@ -21,7 +21,7 @@
   <img src="https://img.shields.io/badge/STATUS-SHIPPING%20AT%20NIGHT-FF00A8?style=for-the-badge&labelColor=0B1026" alt="Status" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ SPLIT IDENTITY & 3D TERMINAL HUD ═══════════════════ -->
 <table align="center" width="100%">
@@ -57,7 +57,7 @@
   <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/audio-hud-3d.svg" width="100%" alt="Neural Lo-Fi 3D Audio Visualizer" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ TECH STACK MATRIX ═══════════════════ -->
 <h2 align="center">⚡ TECHNICAL ARSENAL</h2>
@@ -81,7 +81,7 @@
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ 3D HOLOGRAPHIC PROJECT BENTO ═══════════════════ -->
 <h2 align="center">🚀 DEPLOYED SYSTEMS &amp; BUILDS</h2>
@@ -126,7 +126,7 @@
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ 3D SYSTEM TELEMETRY & STREAK ═══════════════════ -->
 <h2 align="center">📡 SYSTEM TELEMETRY &amp; LIVE HORIZON</h2>
@@ -139,13 +139,13 @@
   <img src="https://streak-stats.demolab.com?user=REP-Julian&background=0B1026&border=00F0FF&stroke=1C284D&ring=00F0FF&fire=FF00A8&currStreakNum=E8F7FF&sideNums=00F0FF&currStreakLabel=00F0FF&sideLabels=7A8BB8&dates=7A8BB8" width="76%" alt="GitHub Streak" />
 </p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ 3D ISOMETRIC CONTRIBUTION MATRIX ═══════════════════ -->
 <h2 align="center">🌐 3D CONTRIBUTION MATRIX</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D Isometric Contribution Graph" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D Isometric Contribution Graph" />
 </p>
 
 <details align="center">
@@ -158,7 +158,7 @@
   </picture>
 </details>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ ENGINEERING PROTOCOLS ═══════════════════ -->
 <h2 align="center">🧠 ENGINEERING PROTOCOLS</h2>
@@ -184,7 +184,7 @@
   </tr>
 </table>
 
-<p align="center"><img src="https://raw.githubusercontent.com/REP-Julian/REP-Julian/main/assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
+<p align="center"><img src="./assets/divider-3d.svg" width="85%" alt="Plasma Divider" /></p>
 
 <!-- ═══════════════════ NEURAL UPLINK & FOOTER ═══════════════════ -->
 <h2 align="center">🛰️ ESTABLISH UPLINK</h2>
