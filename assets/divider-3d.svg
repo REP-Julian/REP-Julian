@@ -7,13 +7,6 @@
       <stop offset="72%" stop-color="#00F0FF" stop-opacity="0.9" />
       <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
     </linearGradient>
-    <filter id="divGlow" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="28">
-      <feGaussianBlur stdDeviation="3" result="b" />
-      <feMerge>
-        <feMergeNode in="b" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
     <style>
       .pulse-beam { stroke-dasharray: 65 200; animation: beamMove 2.6s linear infinite; }
       .pulse-beam-rev { stroke-dasharray: 65 200; animation: beamMoveRev 2.6s linear infinite; }
@@ -24,12 +17,22 @@
     </style>
   </defs>
 
-  <rect x="20" y="13" width="860" height="2" rx="1" fill="url(#railGrad)" filter="url(#divGlow)" />
+  <!-- Static rail -->
+  <rect x="20" y="13" width="860" height="2" rx="1" fill="url(#railGrad)" />
 
-  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" filter="url(#divGlow)" class="pulse-beam" />
-  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="2.5" stroke-linecap="round" filter="url(#divGlow)" class="pulse-beam-rev" />
+  <!-- Cyan Laser Beam: GPU-accelerated layered glow (0% CPU blur overhead) -->
+  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" class="pulse-beam" />
+  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" class="pulse-beam" />
+  <path d="M 40 14 L 432 14" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" class="pulse-beam" />
 
-  <g class="core-spin" filter="url(#divGlow)">
+  <!-- Magenta Laser Beam: GPU-accelerated layered glow (0% CPU blur overhead) -->
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" class="pulse-beam-rev" />
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="2.5" stroke-linecap="round" class="pulse-beam-rev" />
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" class="pulse-beam-rev" />
+
+  <!-- Spinning Core Diamond -->
+  <g class="core-spin">
+    <circle cx="450" cy="14" r="8" fill="#00F0FF" fill-opacity="0.2" />
     <polygon points="450,5 459,14 450,23 441,14" fill="#0B1026" stroke="#00F0FF" stroke-width="1.8" />
     <circle cx="450" cy="14" r="2.5" fill="#FF00A8" />
   </g>

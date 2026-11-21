@@ -207,9 +207,6 @@ def build_hero_svg() -> None:
       <line x1="874" y1="218" x2="908" y2="200" stroke="#00F0FF" stroke-opacity="0.6" stroke-width="1"/>
       <line x1="1006" y1="218" x2="972" y2="200" stroke="#FF00A8" stroke-opacity="0.6" stroke-width="1"/>
     </g>
-
-    <!-- Sweeping Holographic Laser Scanline -->
-    <rect x="0" y="0" width="1200" height="36" fill="url(#scanGrad)" class="scanline"/>
   </g>
 </svg>
 """
@@ -230,13 +227,6 @@ def build_divider_svg() -> None:
       <stop offset="72%" stop-color="#00F0FF" stop-opacity="0.9" />
       <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
     </linearGradient>
-    <filter id="divGlow" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="28">
-      <feGaussianBlur stdDeviation="3" result="b" />
-      <feMerge>
-        <feMergeNode in="b" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
     <style><![CDATA[
       .pulse-beam { stroke-dasharray: 65 200; animation: beamMove 2.6s linear infinite; }
       .pulse-beam-rev { stroke-dasharray: 65 200; animation: beamMoveRev 2.6s linear infinite; }
@@ -247,12 +237,18 @@ def build_divider_svg() -> None:
     ]]></style>
   </defs>
 
-  <rect x="20" y="13" width="860" height="2" rx="1" fill="url(#railGrad)" filter="url(#divGlow)" />
+  <rect x="20" y="13" width="860" height="2" rx="1" fill="url(#railGrad)" />
 
-  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" filter="url(#divGlow)" class="pulse-beam" />
-  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="2.5" stroke-linecap="round" filter="url(#divGlow)" class="pulse-beam-rev" />
+  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" class="pulse-beam" />
+  <path d="M 40 14 L 432 14" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" class="pulse-beam" />
+  <path d="M 40 14 L 432 14" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" class="pulse-beam" />
 
-  <g class="core-spin" filter="url(#divGlow)">
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" class="pulse-beam-rev" />
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FF00A8" stroke-width="2.5" stroke-linecap="round" class="pulse-beam-rev" />
+  <path d="M 468 14 L 860 14" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" class="pulse-beam-rev" />
+
+  <g class="core-spin">
+    <circle cx="450" cy="14" r="8" fill="#00F0FF" fill-opacity="0.2" />
     <polygon points="450,5 459,14 450,23 441,14" fill="#0B1026" stroke="#00F0FF" stroke-width="1.8" />
     <circle cx="450" cy="14" r="2.5" fill="#FF00A8" />
   </g>
@@ -440,11 +436,11 @@ def build_audio_hud_svg() -> None:
   <!-- Progress Track -->
   <rect x="148" y="102" width="520" height="6" rx="3" fill="#1C284D"/>
   <rect x="148" y="102" width="320" height="6" rx="3" fill="url(#progGrad)" filter="url(#aGlow)"/>
-  <circle cx="170" cy="105" r="6" fill="#FFFFFF" stroke="#00F0FF" stroke-width="2" filter="url(#aGlow)" class="progress-dot"/>
+  <circle cx="170" cy="105" r="6" fill="#FFFFFF" stroke="#00F0FF" stroke-width="2" class="progress-dot"/>
   <text x="148" y="126" class="mono" font-size="11" fill="#00F0FF">02:58 // ∞ LOOP</text>
 
   <!-- 16-Band Animated 3D Equalizer -->
-  <g filter="url(#aGlow)">
+  <g>
     {''.join(bars)}
   </g>
 </svg>
