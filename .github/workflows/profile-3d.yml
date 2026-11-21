@@ -22,5 +22,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "chore: update 3D contribution matrix"
+          git diff --staged --quiet || git commit -m "chore: update 3D contribution matrix [skip ci]"
           git push

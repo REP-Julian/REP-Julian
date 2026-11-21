@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="850" height="240" viewBox="0 0 850 240">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0E1536"/>
@@ -9,15 +10,16 @@
       <stop offset="50%" stop-color="#7B2CBF"/>
       <stop offset="100%" stop-color="#FF00A8"/>
     </linearGradient>
-    <style>
-      .mono { font-family: 'Fira Code', ui-monospace, monospace; }
-      .title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 700; }
-      .pulse { animation: pulseAnim 2s infinite ease-in-out; }
-      @keyframes pulseAnim { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-    </style>
   </defs>
+
   <rect x="6" y="6" width="838" height="228" rx="14" fill="url(#bgGrad)" stroke="url(#neonGlow)" stroke-width="1.8"/>
-  <text x="425" y="110" text-anchor="middle" class="title" font-size="22" fill="#E8F7FF">3D ISOMETRIC CONTRIBUTION MATRIX</text>
-  <text x="425" y="145" text-anchor="middle" class="mono" font-size="13" fill="#00F0FF" class="pulse">⚡ INITIALIZING CALENDAR TELEMETRY VIA GITHUB ACTIONS...</text>
-  <text x="425" y="175" text-anchor="middle" class="mono" font-size="11" fill="#7A8BB8">Trigger workflow manually or wait for daily midnight UTC+8 cron</text>
+
+  <text x="425" y="95" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="700" font-size="20" fill="#E8F7FF">3D ISOMETRIC CONTRIBUTION MATRIX</text>
+  
+  <rect x="250" y="115" width="350" height="32" rx="6" fill="#0B1026" stroke="#00F0FF" stroke-width="1"/>
+  <circle cx="270" cy="131" r="5" fill="#00F0FF"/>
+  <text x="285" y="136" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="bold" fill="#00F0FF">READY FOR WORKFLOW DISPATCH</text>
+
+  <text x="425" y="180" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9BB0DF">Actions &gt; Generate 3D Isometric Contribution Graph &gt; Run workflow</text>
+  <text x="425" y="202" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#7A8BB8">Once dispatched, the action commits the real 3D calendar here automatically.</text>
 </svg>
